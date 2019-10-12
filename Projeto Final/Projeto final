@@ -1,0 +1,25 @@
+[Projeto Final - Central de Erros]
+
+#Necessário: Backend;
+#Criar Endpoints = URL (Parâmetro token)
+
+1) Gravar Erro:
+- Banco de Dado(Tabela log):
+	o Campos;
+	o Nível;
+	o IP;
+	o Data/Hora: Verificar como tratar junto ou separado;
+	o Título;
+	o Detalhe: Descrição do erro;
+	o Token: Chave estrangeira => Tabela de usuário;
+	
+2) Tabela de usuário:
+o Usuário;
+o Token: Chave primária(hash do e-mail) => Garantir que o e-mail não esteja na tabela;
+o E-mail;
+o Senha(Cripto);
+
+
+
+
+	
