@@ -14,8 +14,10 @@ namespace Projeto_Final
         public string status{set;get;}
         public string ambiente{set;get;}
         public string origem {set;get;}
-    }
-    public Erro(){
 
+
+        public Erro(){
+
+        }
     }
 }
