@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Central de Erros - Dashboard</title>
+  </head>
+  <body>
+    <header class="header-dashboard">
+      <section class="user-welcome"></section>
+      <section class="user-menu"></section>
+    </header>
+    <nav class="dashboard-filters">
+      <section class="filters-selection">
+        <form>
+          <select name="ambiente" id="ambiente" class="select-filters">
+            <option value="desenvolvimento">Desenvolvimento</option>
+            <option value="homologacao">Homologação</option>
+            <option value="producao">Produção</option>
+          </select>
+          <select name="ordenar" id="ordenar" class="select-filters">
+            <option value="level">Level</option>
+            <option value="frequencia">Frequência</option>
+          </select>
+          <select name="buscar" id="buscar" class="select-filters">
+            <option value="level">Level</option>
+            <option value="descricao">Descrição</option>
+            <option value="origem">Origem</option>
+          </select>
+          <input type="text" id="busca-input" class="dashboard-input" />
+          <button type="submit" class="busca-button">Buscar</button>
+        </form>
+      </section>
+      <section class="filters-buttons">
+        <button class="filter-button">Arquivar</button>
+        <button class="filter-button">Apagar</button>
+        <button class="filter-button">Atualizar</button>
+      </section>
+    </nav>
+    <main class="main-dashboard">
+      <section class="table-header">
+        <div class="table-header-item">Level</div>
+        <div class="table-header-item">Log</div>
+        <div class="table-header-item">Eventos</div>
+      </section>
+      <section class="table-body">
+        <div class="table-body-item">
+          <div class="table-item-level">
+            <div class="level-error">Error</div>
+          </div>
+          <div class="table-item-level">
+            <div class="level-warning">Warning</div>
+          </div>
+          <div class="table-item-level">
+            <div class="level-debug">Debug</div>
+          </div>
+          <div class="table-item-level">
+            <div class="level-error">Error</div>
+          </div>
+        </div>
+        <div class="table-body-item">
+          <div class="table-item-log">
+            <div class="description-error">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              molestias nam vel atque vitae provident quasi ex repellendus.
+            </div>
+          </div>
+          <div class="table-item-log">
+            <div class="description-error">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              molestias nam vel atque vitae provident quasi ex repellendus.
+            </div>
+          </div>
+          <div class="table-item-log">
+            <div class="description-error">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              molestias nam vel atque vitae provident quasi ex repellendus.
+            </div>
+          </div>
+          <div class="table-item-log">
+            <div class="description-error">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              molestias nam vel atque vitae provident quasi ex repellendus.
+            </div>
+          </div>
+        </div>
+        <div class="table-body-item">
+          <div class="table-item-eventos">
+            <div class="event-error">1000</div>
+          </div>
+          <div class="table-item-eventos">
+            <div class="event-error">300</div>
+          </div>
+          <div class="table-item-eventos">
+            <div class="event-error">100</div>
+          </div>
+          <div class="table-item-eventos">
+            <div class="event-error">11</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>&copy; 2019 - Squad 1 C# Women</footer>
+  </body>
+</html>

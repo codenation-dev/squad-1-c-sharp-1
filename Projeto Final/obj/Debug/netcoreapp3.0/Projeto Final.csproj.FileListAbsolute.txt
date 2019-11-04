@@ -1,0 +1,42 @@
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Projeto Final.exe
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\obj\Debug\netcoreapp3.0\Projeto Final.AssemblyInfoInputs.cache
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\obj\Debug\netcoreapp3.0\Projeto Final.AssemblyInfo.cs
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\obj\Debug\netcoreapp3.0\Projeto Final.csproj.CopyComplete
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\System.Security.Permissions.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Projeto Final.deps.json
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Projeto Final.runtimeconfig.json
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Projeto Final.runtimeconfig.dev.json
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Projeto Final.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Projeto Final.pdb
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\obj\Debug\netcoreapp3.0\Projeto Final.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\obj\Debug\netcoreapp3.0\Projeto Final.pdb
+E:\GitHub\squad-1-c-sharp-easynvest-1\Projeto Final\obj\Debug\netcoreapp3.0\Projeto Final.csprojAssemblyReference.cache

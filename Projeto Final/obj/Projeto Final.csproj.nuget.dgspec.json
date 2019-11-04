@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/marianna/Downloads/CodeWoman/Projeto Final/Projeto Final.csproj": {}
+    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\Projeto Final\\Projeto Final.csproj": {}
   },
   "projects": {
-    "/home/marianna/Downloads/CodeWoman/Projeto Final/Projeto Final.csproj": {
+    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\Projeto Final\\Projeto Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marianna/Downloads/CodeWoman/Projeto Final/Projeto Final.csproj",
+        "projectUniqueName": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\Projeto Final\\Projeto Final.csproj",
         "projectName": "Projeto Final",
-        "projectPath": "/home/marianna/Downloads/CodeWoman/Projeto Final/Projeto Final.csproj",
-        "packagesPath": "/home/marianna/.nuget/packages/",
-        "outputPath": "/home/marianna/Downloads/CodeWoman/Projeto Final/obj/",
+        "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\Projeto Final\\Projeto Final.csproj",
+        "packagesPath": "C:\\Users\\melis\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\Projeto Final\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/marianna/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\melis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,6 +37,22 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -50,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

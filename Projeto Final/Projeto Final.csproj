@@ -6,4 +6,28 @@
     <RootNamespace>Projeto_Final</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20191023225549_mig01.cs" />
+    <Compile Remove="Migrations\20191023225549_mig01.Designer.cs" />
+    <Compile Remove="Migrations\20191023230353_Mig02.cs" />
+    <Compile Remove="Migrations\20191023230353_Mig02.Designer.cs" />
+    <Compile Remove="Migrations\20191023230616_Mig03.cs" />
+    <Compile Remove="Migrations\20191023230616_Mig03.Designer.cs" />
+    <Compile Remove="Migrations\20191023230850_Mig04.cs" />
+    <Compile Remove="Migrations\20191023230850_Mig04.Designer.cs" />
+    <Compile Remove="Migrations\20191023230917_Mig04.cs" />
+    <Compile Remove="Migrations\20191023230917_Mig04.Designer.cs" />
+    <Compile Remove="Migrations\20191023231428_Mig05.cs" />
+    <Compile Remove="Migrations\20191023231428_Mig05.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>
