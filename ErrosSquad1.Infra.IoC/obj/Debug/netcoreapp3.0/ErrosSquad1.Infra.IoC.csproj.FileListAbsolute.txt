@@ -1,0 +1,8 @@
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.IoC\bin\Debug\netcoreapp3.0\ErrosSquad1.Infra.IoC.deps.json
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.IoC\bin\Debug\netcoreapp3.0\ErrosSquad1.Infra.IoC.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.IoC\bin\Debug\netcoreapp3.0\ErrosSquad1.Infra.IoC.pdb
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.IoC\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.IoC.AssemblyInfoInputs.cache
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.IoC\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.IoC.AssemblyInfo.cs
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.IoC\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.IoC.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.IoC\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.IoC.pdb
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.IoC\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.IoC.csprojAssemblyReference.cache

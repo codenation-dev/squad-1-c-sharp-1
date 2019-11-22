@@ -1,0 +1,10 @@
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\obj\Debug\netcoreapp3.0\ErrosSquad1.Dominio.AssemblyInfoInputs.cache
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\obj\Debug\netcoreapp3.0\ErrosSquad1.Dominio.AssemblyInfo.cs
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\bin\Debug\netcoreapp3.0\ErrosSquad1.Dominio.deps.json
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\bin\Debug\netcoreapp3.0\ErrosSquad1.Dominio.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\bin\Debug\netcoreapp3.0\ErrosSquad1.Dominio.runtimeconfig.json
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\bin\Debug\netcoreapp3.0\ErrosSquad1.Dominio.runtimeconfig.dev.json
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\bin\Debug\netcoreapp3.0\ErrosSquad1.Dominio.pdb
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\obj\Debug\netcoreapp3.0\ErrosSquad1.Dominio.dll
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\obj\Debug\netcoreapp3.0\ErrosSquad1.Dominio.pdb
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Dominio\obj\Debug\netcoreapp3.0\ErrosSquad1.Dominio.csprojAssemblyReference.cache
