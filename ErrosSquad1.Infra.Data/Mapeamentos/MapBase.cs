@@ -1,9 +1,6 @@
 ﻿using ErrosSquad1.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ErrosSquad1.Infra.Data.Mapeamentos
 {

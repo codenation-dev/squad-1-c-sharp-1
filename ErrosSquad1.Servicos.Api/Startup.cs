@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using ErrosSquad1.Aplicacao;
+using ErrosSquad1.Infra.Data.Contextos;
+using ErrosSquad1.Infra.IoC;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -14,11 +18,14 @@ namespace ErrosSquad1.Servicos.Api
         }
 
         public IConfiguration Configuration { get; }
+        
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(o => o.UseSqlServer(Configuration.GetConnectionString("Restaurante")));
+            services.AddDbContext<AppDbContext>(o => o.UseSqlServer(Configuration.GetConnectionString("")));
             InjetorDependencias.Registrar(services);
-            services.AddAutoMapper(x => x.AddProfile(new MappingEntidade()));
+            //services.AddAutoMapper(x => x.AddProfile(new MappingEntidade()));
+            services.AddAutoMapper(typeof(MappingEntidade).Assembly);
+            
             services.AddMvc();
         }
 
@@ -33,5 +40,4 @@ namespace ErrosSquad1.Servicos.Api
             app.UseMvc();
         }
     }
-}
 }

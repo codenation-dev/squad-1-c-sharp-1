@@ -9,38 +9,21 @@ namespace ErrosSquad1.Infra.Data.Repositorios
 {
     public class ErroRepositorio : RepositorioBase<Erro>, IErroRepositorio
     {
+        //protected readonly AppDbContext contexto;
         public ErroRepositorio(AppDbContext contexto)
             : base(contexto)
         {
-        }
-
-        public void Alterar(Erro entidade)
-        {
-            throw new NotImplementedException();
+            //this.contexto = contexto;
         }
 
         public void Arquivar(List<Erro> erros)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Excluir(List<Erro> erros)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Excluir(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Excluir(Erro entidade)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int Incluir(Erro entidade)
-        {
+            /*
+            contexto.InitTransacao();
+            contexto.Set<TEntidade>().Attach(entidade);
+            contexto.Entry(entidade).State = EntityState.Modified;
+            contexto.SendChanges();
+            */
             throw new NotImplementedException();
         }
 
@@ -55,16 +38,6 @@ namespace ErrosSquad1.Infra.Data.Repositorios
         }
 
         public List<Erro> ListarErros(string ordem, string ambiente, string titulo)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Erro SelecionarPorId(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Erro> SelecionarTodos()
         {
             throw new NotImplementedException();
         }

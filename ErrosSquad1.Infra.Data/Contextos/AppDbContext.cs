@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ErrosSquad1.Dominio.Entidades;
-using ErrosSquad1.Aplicacao.Servicos;
 using ErrosSquad1.Infra.Data.Mapeamentos;
 using Microsoft.EntityFrameworkCore.Storage;
-using System.Transactions;
 using System;
 
 namespace ErrosSquad1.Infra.Data.Contextos

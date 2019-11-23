@@ -1,11 +1,12 @@
-﻿using ErrosSquad1.Dominio.Entidades;
+﻿using ErrosSquad1.Aplicacao.DTO;
+using ErrosSquad1.Aplicacao.Interfaces;
+using ErrosSquad1.Dominio.Entidades;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
-    public class PratoController : ControllerBase<Erro, ErroDTO>
+    public class ErroController : ControllerBase<Erro, ErroDTO>
     {
-        public PratoController(IErroApp app)
-            : base(app)
+        public ErroController(IErroApp app) : base(app)
         { 
         }
     }
