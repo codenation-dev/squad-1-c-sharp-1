@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ErrosSquad1.Aplicacao.DTO;
+using ErrosSquad1.Aplicacao.Interfaces;
+using ErrosSquad1.Dominio.Entidades;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
