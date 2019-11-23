@@ -7,8 +7,8 @@ namespace ErrosSquad1.Dominio.Entidades
     [Table("usuario")]
     public class Usuario : EntidadeBase
     {
-        [Key, Column("id"), Required]
-        public int Id { get; set; }
+        /*[Key, Column("id"), Required]
+        public int Id { get; set; }*/
 
         [Column("token"), MaxLength(40), Required]
         public string Token { get; set; }

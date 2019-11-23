@@ -13,3 +13,4 @@ E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcore
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorTargetAssemblyInfo.cache
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.dll
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.pdb
+E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.csprojAssemblyReference.cache

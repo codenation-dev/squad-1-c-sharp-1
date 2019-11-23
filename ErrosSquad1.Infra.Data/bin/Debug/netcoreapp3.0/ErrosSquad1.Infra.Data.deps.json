@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.0": {
       "ErrosSquad1.Infra.Data/1.0.0": {
         "dependencies": {
+          "ErrosSquad1.Aplicacao": "1.0.0",
           "ErrosSquad1.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.1",
@@ -15,6 +16,18 @@
         },
         "runtime": {
           "ErrosSquad1.Infra.Data.dll": {}
+        }
+      },
+      "AutoMapper/9.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
         }
       },
       "Microsoft.CSharp/4.6.0": {},
@@ -831,6 +844,15 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "ErrosSquad1.Aplicacao/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "ErrosSquad1.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "ErrosSquad1.Aplicacao.dll": {}
+        }
+      },
       "ErrosSquad1.Dominio/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.0.1",
@@ -847,6 +869,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xCqvoxT4HIrNY/xlXG9W+BA/awdrhWvMTKTK/igkGSRbhOhpl3Q8O8Gxlhzjc9JsYqE7sS6AxgyuUUvZ6R5/Bw==",
+      "path": "automapper/9.0.0",
+      "hashPath": "automapper.9.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.6.0": {
       "type": "package",
@@ -1449,6 +1478,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "ErrosSquad1.Aplicacao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ErrosSquad1.Dominio/1.0.0": {
       "type": "project",
