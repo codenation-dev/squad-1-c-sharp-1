@@ -44,7 +44,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             contexto.SendChanges();
         }
 
-        public int Incluir(TEntidade entidade)
+        public void Incluir(TEntidade entidade)
         {
             contexto.InitTransacao();
             var id = contexto.Set<TEntidade>().Add(entidade).Entity.Id;

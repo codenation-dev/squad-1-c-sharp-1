@@ -1,6 +1,7 @@
 ﻿using ErrosSquad1.Aplicacao.DTO;
 using ErrosSquad1.Aplicacao.Interfaces;
 using ErrosSquad1.Dominio.Entidades;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/[controller]")]
+    [Route("api/dashboard")]
     public class ControllerBase<Entidade, EntidadeDTO> : Controller
         where Entidade : EntidadeBase
         where EntidadeDTO : BaseDTO
@@ -24,12 +25,12 @@ namespace ErrosSquad1.Servicos.Api.Controllers
 
         [HttpGet]
         [Route("")]
-        public IActionResult Listar()
+        public IActionResult SelecionarTodos()
         {
             try
             {
-                var restaurantes = app.SelecionarTodos();
-                return new OkObjectResult(restaurantes);
+                var item = app.SelecionarTodos();
+                return new OkObjectResult(item);
             }
             catch (Exception ex)
             {
@@ -43,8 +44,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         {
             try
             {
-                var restaurantes = app.SelecionarPorId(id);
-                return new OkObjectResult(restaurantes);
+                var item = app.SelecionarPorId(id);
+                return new OkObjectResult(item);
             }
             catch (Exception ex)
             {

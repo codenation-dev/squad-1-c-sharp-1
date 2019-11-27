@@ -29,7 +29,7 @@ namespace ErrosSquad1.Dominio.Servicos
             repositorio.Excluir(entidade);
         }
 
-        public int Incluir(TEntidade entidade)
+        public void Incluir(TEntidade entidade)
         {
             return repositorio.Incluir(entidade);
         }

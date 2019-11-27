@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {}
+    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
+    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
         "projectName": "ErrosSquad1.Dominio",
-        "projectPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
-        "packagesPath": "C:\\Users\\gecap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
+        "packagesPath": "C:\\Users\\vcf_f\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gecap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vcf_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,14 +41,6 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -70,20 +62,20 @@
         }
       }
     },
-    "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {
+    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
         "projectName": "ErrosSquad1.Infra.Data",
-        "projectPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\gecap\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\obj\\",
+        "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\vcf_f\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\gecap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vcf_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,8 +88,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj"
+              "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
+                "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj"
               }
             }
           }
@@ -111,14 +103,6 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.2.6, )"

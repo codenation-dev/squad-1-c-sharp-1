@@ -8,7 +8,7 @@ namespace ErrosSquad1.Aplicacao.Interfaces
         where TEntidade : EntidadeBase
         where TEntidadeDTO : BaseDTO
     {
-        int Incluir(TEntidadeDTO entidade);
+        void Incluir(TEntidadeDTO entidade);
 
         void Excluir(int id);
                 

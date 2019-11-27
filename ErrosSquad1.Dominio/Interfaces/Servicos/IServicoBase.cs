@@ -6,7 +6,7 @@ namespace ErrosSquad1.Dominio.Interfaces.Servicos
     public interface IServicoBase<TEntidade>
         where TEntidade : EntidadeBase
     {
-        int Incluir(TEntidade entidade);
+        void Incluir(TEntidade entidade);
 
         void Excluir(int id);
 
