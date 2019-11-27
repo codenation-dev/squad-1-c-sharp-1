@@ -43,6 +43,9 @@ namespace ErrosSquad1.Dominio.Entidades
         [Column("status"), MaxLength(1), Required]
         public char Status { get; set; }
 
+        [NotMapped]
+        public int Frequencia { get; set; }
+
         public Erro()
         {
 

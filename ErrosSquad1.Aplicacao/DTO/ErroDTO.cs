@@ -5,7 +5,7 @@ using System.Text;
 namespace ErrosSquad1.Aplicacao.DTO
 {
     public class ErroDTO : BaseDTO
-        {
+    {
         public int IdUsuario { get; set; }
 
         public int IdNivel { get; set; }
