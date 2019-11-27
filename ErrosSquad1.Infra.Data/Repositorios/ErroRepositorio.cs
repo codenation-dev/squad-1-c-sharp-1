@@ -1,72 +1,110 @@
 ﻿using ErrosSquad1.Dominio.Entidades;
 using ErrosSquad1.Dominio.Interfaces.Repositorios;
 using ErrosSquad1.Infra.Data.Contextos;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace ErrosSquad1.Infra.Data.Repositorios
 {
     public class ErroRepositorio : RepositorioBase<Erro>, IErroRepositorio
     {
+        private const char cErroArquivado = 'A';
+        private const char cErroValido = 'V';
+
+        private readonly AppDbContext contexto;
         public ErroRepositorio(AppDbContext contexto)
             : base(contexto)
         {
-        }
-
-        public void Alterar(Erro entidade)
-        {
-            throw new NotImplementedException();
+            this.contexto = contexto;
         }
 
         public void Arquivar(List<Erro> erros)
         {
-            throw new NotImplementedException();
+            contexto.InitTransacao();
+            foreach (Erro erro in erros)
+            {
+                erro.Status = cErroArquivado;
+
+                contexto.Set<Erro>().Attach(erro);
+                contexto.Entry(erro).State = EntityState.Modified;
+            }
+            contexto.SendChanges();
         }
 
-        public void Excluir(List<Erro> erros)
+        private int RetornarFrequencia(string titulo)
         {
-            throw new NotImplementedException();
+            return contexto.Set<Erro>().Where(e => e.Titulo == titulo).Count();
         }
 
-        public void Excluir(int id)
+        private List<Erro> ListarErros()
         {
-            throw new NotImplementedException();
+            return contexto.Set<Erro>()
+                .Where(w => w.Status == cErroValido)
+                .Select(s => new Erro()
+                {
+                    Id = s.Id,
+                    IdUsuario = s.IdUsuario,
+                    Usuario = s.Usuario,
+                    IdNivel = s.IdNivel,
+                    Nivel = s.Nivel,
+                    IdAmbiente = s.IdAmbiente,
+                    Ambiente = s.Ambiente,
+                    Origem = s.Origem,
+                    DataHora = s.DataHora,
+                    Titulo = s.Titulo,
+                    Detalhe = s.Detalhe,
+                    Status = s.Status,
+                    Frequencia = RetornarFrequencia(s.Titulo)
+                })
+                .ToList();
         }
 
-        public void Excluir(Erro entidade)
+        public List<Erro> ListarErrosPorFrequencia()
         {
-            throw new NotImplementedException();
+            return ListarErros()
+                .Where(w => w.Status == cErroValido)
+                .OrderBy(e => e.Frequencia)
+                .ToList();
         }
 
-        public int Incluir(Erro entidade)
+        public List<Erro> ListarErrosPorFrequencia(string ambiente)
         {
-            throw new NotImplementedException();
+            return ListarErrosPorFrequencia()
+                .Where(w => w.Ambiente.Nome == ambiente)
+                .ToList();
         }
 
-        public List<Erro> ListarErros(string ordem)
+        public List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo)
         {
-            throw new NotImplementedException();
+            return ListarErrosPorFrequencia(ambiente)
+                .Where(w => w.Titulo == titulo)
+                .ToList();
         }
 
-        public List<Erro> ListarErros(string ordem, string ambiente)
+        public List<Erro> ListarErrosPorNivel()
         {
-            throw new NotImplementedException();
+            return ListarErros()
+                .OrderBy(e => e.Nivel.Nome)
+                .ToList();
         }
 
-        public List<Erro> ListarErros(string ordem, string ambiente, string titulo)
+        public List<Erro> ListarErrosPorNivel(string ambiente)
         {
-            throw new NotImplementedException();
+            return ListarErrosPorNivel()
+                .Where(w => w.Ambiente.Nome == ambiente)                
+                .ToList();
         }
 
-        public Erro SelecionarPorId(int id)
+        public List<Erro> ListarErrosPorNivel(string ambiente, string titulo)
         {
-            throw new NotImplementedException();
+            return ListarErrosPorNivel(ambiente)
+                .Where(w => w.Titulo == titulo)
+                .ToList();
         }
 
-        public IEnumerable<Erro> SelecionarTodos()
-        {
-            throw new NotImplementedException();
-        }
+
+
     }
 }

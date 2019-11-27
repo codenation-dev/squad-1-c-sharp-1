@@ -1,13 +1,3 @@
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\bin\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.deps.json
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\bin\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.dll
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\bin\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.pdb
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.csprojAssemblyReference.cache
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.AssemblyInfoInputs.cache
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.AssemblyInfo.cs
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.dll
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.pdb
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\bin\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.runtimeconfig.json
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\bin\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.runtimeconfig.dev.json
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\bin\Debug\netcoreapp3.0\ErrosSquad1.Dominio.dll
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\bin\Debug\netcoreapp3.0\ErrosSquad1.Dominio.pdb
-E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Infra.Data\obj\Debug\netcoreapp3.0\ErrosSquad1.Infra.Data.csproj.CopyComplete

@@ -5,14 +5,19 @@ namespace ErrosSquad1.Dominio.Interfaces.Servicos
 {
     public interface IErroServico : IServicoBase<Erro>
     {
-        public List<Erro> ListarErros(string ordem);
+        List<Erro> ListarErrosPorNivel();
 
-        public List<Erro> ListarErros(string ordem, string ambiente);
+        List<Erro> ListarErrosPorNivel(string ambiente);
 
-        public List<Erro> ListarErros(string ordem, string ambiente, string titulo);
+        List<Erro> ListarErrosPorNivel(string ambiente, string titulo);
 
-        public void Arquivar(List<Erro> erros);
+        List<Erro> ListarErrosPorFrequencia();
 
-        //public void Excluir(List<Erro> erros);
+        List<Erro> ListarErrosPorFrequencia(string ambiente);
+
+        List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo);
+
+        void Arquivar(List<Erro> erros);
+
     }
 }

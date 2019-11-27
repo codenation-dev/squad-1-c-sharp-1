@@ -7,35 +7,46 @@ namespace ErrosSquad1.Dominio.Servicos
 {
     public class ErroServico : ServicoBase<Erro>, IErroServico
     {
+        protected readonly IErroRepositorio repositorio;
         public ErroServico(IErroRepositorio repositorio)
             : base(repositorio)
         {
-
+            this.repositorio = repositorio;
         }
 
         public void Arquivar(List<Erro> erros)
         {
-            throw new System.NotImplementedException();
+            repositorio.Arquivar(erros);
         }
 
-        public void Excluir(List<Erro> erros)
+        public List<Erro> ListarErrosPorFrequencia()
         {
-            throw new System.NotImplementedException();
+            return repositorio.ListarErrosPorFrequencia();
         }
 
-        public List<Erro> ListarErros(string ordem)
+        public List<Erro> ListarErrosPorFrequencia(string ambiente)
         {
-            throw new System.NotImplementedException();
+            return repositorio.ListarErrosPorFrequencia(ambiente);
         }
 
-        public List<Erro> ListarErros(string ordem, string ambiente)
+        public List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo)
         {
-            throw new System.NotImplementedException();
+            return repositorio.ListarErrosPorFrequencia(ambiente, titulo);
         }
 
-        public List<Erro> ListarErros(string ordem, string ambiente, string titulo)
+        public List<Erro> ListarErrosPorNivel()
         {
-            throw new System.NotImplementedException();
+            return repositorio.ListarErrosPorNivel();
+        }
+
+        public List<Erro> ListarErrosPorNivel(string ambiente)
+        {
+            return repositorio.ListarErrosPorNivel(ambiente);
+        }
+
+        public List<Erro> ListarErrosPorNivel(string ambiente, string titulo)
+        {
+            return repositorio.ListarErrosPorNivel(ambiente, titulo);
         }
     }
 }
