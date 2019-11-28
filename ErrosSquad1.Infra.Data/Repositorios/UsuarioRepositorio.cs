@@ -2,29 +2,32 @@
 using ErrosSquad1.Dominio.Interfaces.Repositorios;
 using ErrosSquad1.Infra.Data.Contextos;
 using System;
+using System.Linq;
 
 namespace ErrosSquad1.Infra.Data.Repositorios
 {
     public class UsuarioRepositorio : RepositorioBase<Usuario>, IUsuarioRepositorio
     {
+        protected readonly AppDbContext users;
         public UsuarioRepositorio(AppDbContext contexto)
             : base(contexto)
         {
+            users = contexto;
         }
 
         public bool ConsistirUsuario(string email, string nome, string senha)
         {
-            throw new NotImplementedException();
+            users.ConsistirUsuario(email, nome, senha);
         }
 
         public Usuario GetUsuario(string email)
         {
-            throw new NotImplementedException();
+            users.GetUsuario(email);
         }
 
         public bool ValidarLoginUsuario(string email)
         {
-            throw new NotImplementedException();
+            users.ValidarLoginUsuario(email);
         }
     }
 }
