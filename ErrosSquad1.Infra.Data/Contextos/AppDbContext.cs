@@ -2,7 +2,9 @@
 using ErrosSquad1.Dominio.Entidades;
 using ErrosSquad1.Infra.Data.Mapeamentos;
 using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Configuration;
 using System;
+using System.Configuration;
 
 namespace ErrosSquad1.Infra.Data.Contextos
 {
@@ -18,12 +20,29 @@ namespace ErrosSquad1.Infra.Data.Contextos
 
         public IDbContextTransaction Transaction { get; private set; }
 
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+            /*if (Database.GetPendingMigrations().Count() > 0)
+            {
+                Database.Migrate();
+            }*/                
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            
+
+            /* IConfigurationRoot configuration = new ConfigurationBuilder()
+               .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+               .AddJsonFile("appsettings.json")
+               .Build();*/
+
+
             //todo : está duplicada a string de conexão rever
             optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=projeto_final;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                
+                //(.GetConnectionString(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=projeto_final;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

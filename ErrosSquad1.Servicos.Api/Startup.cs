@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using System;
 
 namespace ErrosSquad1.Servicos.Api
 {
@@ -21,15 +22,21 @@ namespace ErrosSquad1.Servicos.Api
         }
 
         public IConfiguration Configuration { get; }
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
-            //todo : está duplicada a string de conexão rever
-            services.AddDbContext<AppDbContext>(o => o.UseSqlServer(Configuration.GetConnectionString(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=projeto_final;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")));
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+               .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+               .AddJsonFile("appsettings.json")
+               .Build();
+
+            services.AddDbContext<AppDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("ConnectionString")));
+
             InjetorDependencias.Registrar(services);
-            //services.AddAutoMapper(x => x.AddProfile(new MappingEntidade()));
+
             services.AddAutoMapper(typeof(MappingEntidade).Assembly);
-            //inicio token
+
+            #region inicio token
             var key = System.Text.Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddCors();
             services.AddAuthentication(x =>
@@ -49,7 +56,8 @@ namespace ErrosSquad1.Servicos.Api
                     ValidateAudience = false
                 };
             });
-            //final token
+            # endregion final token
+            
             services.AddMvc();
         }
 
@@ -59,7 +67,7 @@ namespace ErrosSquad1.Servicos.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-           
+
             //inicio token
             app.UseAuthentication();
             //final token

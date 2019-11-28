@@ -1,3 +1,13 @@
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Aplicacao.dll
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Dominio.dll
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Infra.Data.dll
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Infra.IoC.dll
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.csprojAssemblyReference.cache
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorAssemblyInfo.cache
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorAssemblyInfo.cs
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.AssemblyInfoInputs.cache
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.AssemblyInfo.cs
+C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorTargetAssemblyInfo.cache
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.csprojAssemblyReference.cache
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorAssemblyInfo.cache
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorAssemblyInfo.cs
@@ -24,13 +34,3 @@ E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcore
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.pdb
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.dll
 E:\GitHub\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.pdb
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Aplicacao.dll
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Dominio.dll
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Infra.Data.dll
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\bin\Debug\netcoreapp2.2\ErrosSquad1.Infra.IoC.dll
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.csprojAssemblyReference.cache
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorAssemblyInfo.cache
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorAssemblyInfo.cs
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.AssemblyInfoInputs.cache
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.AssemblyInfo.cs
-C:\Users\gecap\squad-1-c-sharp-easynvest-1\ErrosSquad1.Servicos.Api\obj\Debug\netcoreapp2.2\ErrosSquad1.Servicos.Api.RazorTargetAssemblyInfo.cache

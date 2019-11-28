@@ -49,7 +49,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             contexto.InitTransacao();
             var id = contexto.Set<TEntidade>().Add(entidade).Entity.Id;
             contexto.SendChanges();
-            return id;
+            
         }
 
         public TEntidade SelecionarPorId(int id)

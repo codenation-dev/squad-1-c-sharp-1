@@ -38,7 +38,7 @@ namespace ErrosSquad1.Aplicacao.Servicos
 
         public void Incluir(TEntidadeDTO entidade)
         {
-            return servico.Incluir(iMapper.Map<TEntidade>(entidade));
+            servico.Incluir(iMapper.Map<TEntidade>(entidade));
         }
 
         public TEntidadeDTO SelecionarPorId(int id)

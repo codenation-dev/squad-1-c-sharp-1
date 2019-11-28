@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj": {}
+    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj": {
+    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj",
+        "projectUniqueName": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj",
         "projectName": "ErrosSquad1.Aplicacao",
-        "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj",
-        "packagesPath": "C:\\Users\\vcf_f\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\obj\\",
+        "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj",
+        "packagesPath": "C:\\Users\\melis\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vcf_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\melis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +27,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
-                "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj"
+              "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
+                "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj"
               }
             }
           }
@@ -70,20 +67,17 @@
         }
       }
     },
-    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
+    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
+        "projectUniqueName": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
         "projectName": "ErrosSquad1.Dominio",
-        "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
-        "packagesPath": "C:\\Users\\vcf_f\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\obj\\",
+        "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
+        "packagesPath": "C:\\Users\\melis\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vcf_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\melis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,6 +106,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [

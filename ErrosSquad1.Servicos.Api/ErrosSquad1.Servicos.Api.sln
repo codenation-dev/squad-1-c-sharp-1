@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrosSquad1.Servicos.Api", "ErrosSquad1.Servicos.Api.csproj", "{57C3C316-BD4F-417F-B616-7AD1042CFBEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrosSquad1.Servicos.Api", "ErrosSquad1.Servicos.Api.csproj", "{57C3C316-BD4F-417F-B616-7AD1042CFBEB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Serviços", "2 - Serviços", "{5EDCC896-EAB0-4215-8A80-00BA18EFBDF7}"
 EndProject
@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Formulários", "Formulário
 		..\ErrosSquad1.Apresentacao\Formulários\login.html = ..\ErrosSquad1.Apresentacao\Formulários\login.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{09552340-7008-47C5-94D4-4FB34F308B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrosSquad1.Teste", "..\ErrosSquad1.Teste\ErrosSquad1.Teste.csproj", "{17A057C3-36F7-4AEA-AFC4-C3272F4796E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,10 @@ Global
 		{28561B6D-9E2A-46BB-BA39-382C816D4CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28561B6D-9E2A-46BB-BA39-382C816D4CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28561B6D-9E2A-46BB-BA39-382C816D4CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A057C3-36F7-4AEA-AFC4-C3272F4796E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A057C3-36F7-4AEA-AFC4-C3272F4796E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A057C3-36F7-4AEA-AFC4-C3272F4796E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A057C3-36F7-4AEA-AFC4-C3272F4796E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +76,7 @@ Global
 		{6ED51522-8261-4CF7-9A18-CCA7371CAE0C} = {70421938-C031-42DC-9A13-DFFA7ACDB5CD}
 		{28561B6D-9E2A-46BB-BA39-382C816D4CEF} = {70421938-C031-42DC-9A13-DFFA7ACDB5CD}
 		{2C7A63F5-2A90-4347-A61D-71DC14CC5AF0} = {B38F2D05-A035-47E2-9FB8-B6D5307E187D}
+		{17A057C3-36F7-4AEA-AFC4-C3272F4796E4} = {09552340-7008-47C5-94D4-4FB34F308B66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BD19439-791E-4D8F-8A0F-8A6D953D467A}
