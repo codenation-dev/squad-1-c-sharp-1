@@ -24,6 +24,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             try
             {
                 var erro = app.ListarErrosPorNivel();
+
                 return new OkObjectResult(erro);
             }
             catch (Exception ex)

@@ -56,8 +56,8 @@ namespace ErrosSquad1.Servicos.Api
                     ValidateAudience = false
                 };
             });
-            # endregion final token
-            
+            #endregion final token
+
             services.AddMvc();
         }
 
@@ -68,9 +68,9 @@ namespace ErrosSquad1.Servicos.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            //inicio token
+            #region inicio token
             app.UseAuthentication();
-            //final token
+            # endregion final token
             app.UseCors(a => a.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             app.UseMvc();
         }

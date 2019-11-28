@@ -2,7 +2,6 @@
 using ErrosSquad1.Dominio.Interfaces.Repositorios;
 using ErrosSquad1.Infra.Data.Contextos;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -40,7 +39,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
 
         private List<Erro> ListarErros()
         {
-            List <Erro> erros = contexto.Set<Erro>()
+            List<Erro> erros = contexto.Set<Erro>()
                 .Where(w => w.Status == cErroValido)
                 .Select(s => new Erro()
                 {
@@ -100,7 +99,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
         public List<Erro> ListarErrosPorNivel(string ambiente)
         {
             return ListarErrosPorNivel()
-                .Where(w => w.Ambiente.Nome == ambiente)                
+                .Where(w => w.Ambiente.Nome == ambiente)
                 .ToList();
         }
 
