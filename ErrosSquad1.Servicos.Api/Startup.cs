@@ -21,10 +21,8 @@ namespace ErrosSquad1.Servicos.Api
         
         public void ConfigureServices(IServiceCollection services)
         {
-            //todo : está duplicada a string de conexão rever
-            services.AddDbContext<AppDbContext>(o => o.UseSqlServer(Configuration.GetConnectionString(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=projeto_final;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")));
+            services.AddDbContext<AppDbContext>(o => o.UseSqlServer(Configuration.GetConnectionString("ConnectionString")));
             InjetorDependencias.Registrar(services);
-            //services.AddAutoMapper(x => x.AddProfile(new MappingEntidade()));
             services.AddAutoMapper(typeof(MappingEntidade).Assembly);
             
             services.AddMvc();

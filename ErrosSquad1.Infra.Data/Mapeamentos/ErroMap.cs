@@ -12,10 +12,7 @@ namespace ErrosSquad1.Infra.Data.Mapeamentos
     {
         public override void Configure(EntityTypeBuilder<Erro> builder)
         {
-            /* base.Configure(builder);
-            builder.ToTable("prato");
-            builder.Property(c => c.Nome).IsRequired().HasColumnName("Nome").HasMaxLength(100);
-            builder.Property(c => c.Preco).IsRequired().HasColumnName("Preco");*/
+            base.Configure(builder);
         }
     }
 }
