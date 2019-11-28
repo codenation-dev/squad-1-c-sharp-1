@@ -40,7 +40,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
 
         private List<Erro> ListarErros()
         {
-            List <Erro> erros = contexto.Set<Erro>()
+            return contexto.Set<Erro>()
                 .Where(w => w.Status == cErroValido)
                 .Select(s => new Erro()
                 {
@@ -56,16 +56,9 @@ namespace ErrosSquad1.Infra.Data.Repositorios
                     Titulo = s.Titulo,
                     Detalhe = s.Detalhe,
                     Status = s.Status,
-                    Frequencia = 0
+                    Frequencia = RetornarFrequencia(s.Titulo)
                 })
                 .ToList();
-
-            foreach (var e in erros)
-            {
-                e.Frequencia = RetornarFrequencia(e.Titulo);
-            }
-
-            return erros;
         }
 
         public List<Erro> ListarErrosPorFrequencia()
