@@ -31,7 +31,7 @@ namespace ErrosSquad1.Dominio.Servicos
 
         public void Incluir(TEntidade entidade)
         {
-            return repositorio.Incluir(entidade);
+            repositorio.Incluir(entidade);
         }
 
         public TEntidade SelecionarPorId(int id)
