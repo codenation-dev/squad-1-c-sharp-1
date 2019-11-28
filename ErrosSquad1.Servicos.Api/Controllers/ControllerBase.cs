@@ -11,7 +11,8 @@ using System.Threading.Tasks;
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/dashboard")]
+    [Route("api/[controller]")]
+    [ApiController]
     public class ControllerBase<Entidade, EntidadeDTO> : Controller
         where Entidade : EntidadeBase
         where EntidadeDTO : BaseDTO
@@ -24,7 +25,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpGet]
-        [Route("")]
+        [Route("all")]
         public IActionResult SelecionarTodos()
         {
             try
