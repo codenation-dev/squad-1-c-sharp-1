@@ -58,7 +58,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         {
             try
             {
-                return new OkObjectResult(app.Incluir(dado));
+                app.Incluir(dado);
+                return new OkResult();
             }
             catch (Exception ex)
             {

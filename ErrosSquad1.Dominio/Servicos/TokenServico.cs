@@ -1,10 +1,9 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
-using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
-using System.Collections.Generic;
 using System.Text;
 using ErrosSquad1.Dominio.Entidades;
+using Microsoft.IdentityModel.Tokens;
 
 namespace ErrosSquad1.Dominio.Servicos
 {
