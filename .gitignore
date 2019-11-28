@@ -365,3 +365,11 @@ ErrosSquad1.Servicos.Api/obj/Debug/netcoreapp2.2/ErrosSquad1.Servicos.Api.csproj
 ErrosSquad1.Infra.Data/obj/ErrosSquad1.Infra.Data.csproj.nuget.cache
 *.cache
 *.cache
+ErrosSquad1.Infra.Data/obj/ErrosSquad1.Infra.Data.csproj.nuget.cache
+ErrosSquad1.Infra.Data/obj/project.assets.json
+ErrosSquad1.Infra.IoC/obj/ErrosSquad1.Infra.IoC.csproj.nuget.cache
+ErrosSquad1.Infra.IoC/obj/project.assets.json
+ErrosSquad1.Servicos.Api/obj/Debug/netcoreapp2.2/ErrosSquad1.Servicos.Api.csprojAssemblyReference.cache
+ErrosSquad1.Servicos.Api/obj/ErrosSquad1.Servicos.Api.csproj.nuget.cache
+ErrosSquad1.Servicos.Api/obj/ErrosSquad1.Servicos.Api.csproj.nuget.dgspec.json
+ErrosSquad1.Servicos.Api/obj/project.assets.json
