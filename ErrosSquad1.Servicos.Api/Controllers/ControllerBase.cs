@@ -7,7 +7,7 @@ using System;
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class ControllerBase<Entidade, EntidadeDTO> : Controller
         where Entidade : EntidadeBase
@@ -21,7 +21,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpGet]
-        [Route("all")]
+        [ActionName("listar-todos")]
+        [Route("")]
         public IActionResult SelecionarTodos()
         {
             try
@@ -36,6 +37,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpGet]
+        [ActionName("selecionar")]
         [Route("{id}")]
         public IActionResult SelecionarPorId(int id)
         {
@@ -51,6 +53,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpPost]
+        [ActionName("incluir")]
+        [Route("")]
         public IActionResult Incluir([FromBody] EntidadeDTO dado)
         {
             try
@@ -64,7 +68,9 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
-        //[HttpPut]
+        [HttpPut]
+        [ActionName("alterar")]
+        [Route("")]
         public IActionResult Alterar([FromBody] EntidadeDTO dado)
         {
             try
@@ -79,6 +85,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpDelete]
+        [ActionName("excluir")]
         [Route("{id}")]
         public IActionResult Excluir(int id)
         {

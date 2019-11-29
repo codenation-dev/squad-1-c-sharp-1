@@ -71,7 +71,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
         {
             return ListarErros()
                 .Where(w => w.Status == cErroValido)
-                .OrderBy(e => e.Frequencia)
+                .OrderByDescending(e => e.Frequencia)
                 .ToList();
         }
 
