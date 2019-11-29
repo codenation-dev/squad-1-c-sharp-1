@@ -2,7 +2,6 @@
 using ErrosSquad1.Dominio.Interfaces.Repositorios;
 using ErrosSquad1.Infra.Data.Contextos;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -40,25 +39,32 @@ namespace ErrosSquad1.Infra.Data.Repositorios
 
         private List<Erro> ListarErros()
         {
-            return contexto.Set<Erro>()
-                .Where(w => w.Status == cErroValido)
-                .Select(s => new Erro()
-                {
-                    Id = s.Id,
-                    IdUsuario = s.IdUsuario,
-                    Usuario = s.Usuario,
-                    IdNivel = s.IdNivel,
-                    Nivel = s.Nivel,
-                    IdAmbiente = s.IdAmbiente,
-                    Ambiente = s.Ambiente,
-                    Origem = s.Origem,
-                    DataHora = s.DataHora,
-                    Titulo = s.Titulo,
-                    Detalhe = s.Detalhe,
-                    Status = s.Status,
-                    Frequencia = RetornarFrequencia(s.Titulo)
-                })
-                .ToList();
+            List<Erro> erros = contexto.Set<Erro>()
+                            .Where(w => w.Status == cErroValido)
+                            .Select(s => new Erro()
+                            {
+                                Id = s.Id,
+                                IdUsuario = s.IdUsuario,
+                                Usuario = s.Usuario,
+                                IdNivel = s.IdNivel,
+                                Nivel = s.Nivel,
+                                IdAmbiente = s.IdAmbiente,
+                                Ambiente = s.Ambiente,
+                                Origem = s.Origem,
+                                DataHora = s.DataHora,
+                                Titulo = s.Titulo,
+                                Detalhe = s.Detalhe,
+                                Status = s.Status,
+                                Frequencia = 0
+                            })
+                            .ToList();
+
+            foreach (var e in erros)
+            {
+                e.Frequencia = RetornarFrequencia(e.Titulo);
+            }
+
+            return erros;
         }
 
         public List<Erro> ListarErrosPorFrequencia()
@@ -93,7 +99,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
         public List<Erro> ListarErrosPorNivel(string ambiente)
         {
             return ListarErrosPorNivel()
-                .Where(w => w.Ambiente.Nome == ambiente)                
+                .Where(w => w.Ambiente.Nome == ambiente)
                 .ToList();
         }
 

@@ -29,7 +29,7 @@ namespace ErrosSquad1.Servicos.Api
             InjetorDependencias.Registrar(services);
             //services.AddAutoMapper(x => x.AddProfile(new MappingEntidade()));
             services.AddAutoMapper(typeof(MappingEntidade).Assembly);
-            //inicio token
+            #region token
             var key = System.Text.Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddCors();
             services.AddAuthentication(x =>
@@ -49,7 +49,9 @@ namespace ErrosSquad1.Servicos.Api
                     ValidateAudience = false
                 };
             });
-            //final token
+
+            #endregion final token
+
             services.AddMvc();
         }
 
@@ -59,10 +61,11 @@ namespace ErrosSquad1.Servicos.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-           
-            //inicio token
+
+
+            #region inicio token
             app.UseAuthentication();
-            //final token
+            # endregion final token
             app.UseCors(a => a.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             app.UseMvc();
         }
