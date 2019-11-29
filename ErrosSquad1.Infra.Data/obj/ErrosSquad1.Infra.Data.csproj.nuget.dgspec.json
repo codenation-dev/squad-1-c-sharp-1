@@ -124,10 +124,6 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
-            },
-            "System.Configuration.ConfigurationManager": {
-              "target": "Package",
-              "version": "[4.6.0, )"
             }
           },
           "imports": [

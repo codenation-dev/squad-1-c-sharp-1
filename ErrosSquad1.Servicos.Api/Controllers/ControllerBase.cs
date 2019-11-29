@@ -7,8 +7,7 @@ using System;
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/[controller]")]
-    [ApiController]
+    [Route("api/dashboard")]
     public class ControllerBase<Entidade, EntidadeDTO> : Controller
         where Entidade : EntidadeBase
         where EntidadeDTO : BaseDTO
@@ -21,7 +20,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpGet]
-        [Route("all")]
+        [Route("")]
         public IActionResult SelecionarTodos()
         {
             try
