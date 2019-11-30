@@ -8,7 +8,7 @@ namespace ErrosSquad1.Dominio.Interfaces.Repositorios
 
         bool ConsistirUsuario(string email, string nome, string senha);
 
-        //void CadastrarUsuario(Usuario usuario);
+        void CadastrarUsuario(Usuario usuario);
 
         bool ValidarLoginUsuario(string email);
     }

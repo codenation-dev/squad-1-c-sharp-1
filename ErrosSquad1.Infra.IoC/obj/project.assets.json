@@ -5487,35 +5487,51 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\vcf_f\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+=======
+    "/home/marianna/.nuget/packages/": {}
+>>>>>>> 120ce0b9ffe9d215120639b22ec772a4c56a3d8c
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.IoC\\ErrosSquad1.Infra.IoC.csproj",
       "projectName": "ErrosSquad1.Infra.IoC",
       "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.IoC\\ErrosSquad1.Infra.IoC.csproj",
       "packagesPath": "C:\\Users\\vcf_f\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.IoC\\obj\\",
+=======
+      "projectUniqueName": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.IoC/ErrosSquad1.Infra.IoC.csproj",
+      "projectName": "ErrosSquad1.Infra.IoC",
+      "projectPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.IoC/ErrosSquad1.Infra.IoC.csproj",
+      "packagesPath": "/home/marianna/.nuget/packages/",
+      "outputPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.IoC/obj/",
+>>>>>>> 120ce0b9ffe9d215120639b22ec772a4c56a3d8c
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\vcf_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+        "/home/marianna/.nuget/NuGet/NuGet.Config"
+>>>>>>> 120ce0b9ffe9d215120639b22ec772a4c56a3d8c
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj": {
               "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj"
             },
@@ -5524,6 +5540,16 @@
             },
             "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {
               "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj"
+=======
+            "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Aplicacao/ErrosSquad1.Aplicacao.csproj": {
+              "projectPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Aplicacao/ErrosSquad1.Aplicacao.csproj"
+            },
+            "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Dominio/ErrosSquad1.Dominio.csproj": {
+              "projectPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Dominio/ErrosSquad1.Dominio.csproj"
+            },
+            "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.Data/ErrosSquad1.Infra.Data.csproj": {
+              "projectPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.Data/ErrosSquad1.Infra.Data.csproj"
+>>>>>>> 120ce0b9ffe9d215120639b22ec772a4c56a3d8c
             }
           }
         }
@@ -5554,7 +5580,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
