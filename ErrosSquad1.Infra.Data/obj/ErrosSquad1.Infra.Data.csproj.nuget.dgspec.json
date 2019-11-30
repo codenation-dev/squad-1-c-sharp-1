@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.Data/ErrosSquad1.Infra.Data.csproj": {}
+    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {}
   },
   "projects": {
-    "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Dominio/ErrosSquad1.Dominio.csproj": {
+    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Dominio/ErrosSquad1.Dominio.csproj",
+        "projectUniqueName": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
         "projectName": "ErrosSquad1.Dominio",
-        "projectPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Dominio/ErrosSquad1.Dominio.csproj",
-        "packagesPath": "/home/marianna/.nuget/packages/",
-        "outputPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Dominio/obj/",
+        "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
+        "packagesPath": "C:\\Users\\melis\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/marianna/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\melis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,33 +59,35 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.Data/ErrosSquad1.Infra.Data.csproj": {
+    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.Data/ErrosSquad1.Infra.Data.csproj",
+        "projectUniqueName": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
         "projectName": "ErrosSquad1.Infra.Data",
-        "projectPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.Data/ErrosSquad1.Infra.Data.csproj",
-        "packagesPath": "/home/marianna/.nuget/packages/",
-        "outputPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Infra.Data/obj/",
+        "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\melis\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/marianna/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\melis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Dominio/ErrosSquad1.Dominio.csproj": {
-                "projectPath": "/home/marianna/Downloads/CodeWoman/squad-1-c-sharp-easynvest-1/ErrosSquad1.Dominio/ErrosSquad1.Dominio.csproj"
+              "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
+                "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj"
               }
             }
           }
@@ -132,7 +136,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

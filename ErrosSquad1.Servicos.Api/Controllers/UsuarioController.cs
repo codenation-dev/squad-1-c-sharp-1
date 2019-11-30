@@ -8,6 +8,8 @@ using System.Collections.Generic;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public class UsuarioController : ControllerBase<Usuario, UsuarioDTO>
     {
         private readonly IUsuarioApp app;
@@ -16,7 +18,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             this.app = app;
         }
 
-        public IActionResult ConsistirUsuario(string email, string nome, string senha){
+        /*
+         * public IActionResult ConsistirUsuario(string email, string nome, string senha){
             try{
                 var resultado = app.ConsistirUsuario(email, nome, senha);
                 return Ok(resultado);
@@ -24,6 +27,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                 return BadRequest(e.Message);
             }
         }
+        
         public IActionResult ValidarLoginUsuario(string email){
             try{
                 var resultado = app.ValidarLoginUsuario(email);
@@ -31,10 +35,11 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }catch(Exception e){
                 return BadRequest(e.Message);
             }
-        }
+        }*/
         
-        [Route("~/api/GetUsuario")]  
+        
         [HttpGet]
+        [Route("{email}")]
         public IActionResult GetUsuario(string email){
             try{
                 var user = app.GetUsuario(email);
@@ -43,7 +48,9 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                 return BadRequest(e.Message);
             } 
         }
-        [Route("~/api/CadastrarUsuario")]  
+
+        /*
+        [Route("")]  
         [HttpPut]
         public IActionResult CadastrarUsuario([FromBody] Usuario usuario)
         {
@@ -53,7 +60,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }catch(Exception e){
                 return BadRequest(e.Message);
             }
-        } 
+        } */
 
     }
 }

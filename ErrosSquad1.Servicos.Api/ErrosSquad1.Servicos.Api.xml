@@ -4,5 +4,20 @@
         <name>ErrosSquad1.Servicos.Api</name>
     </assembly>
     <members>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorNivel(System.String)">
+            <summary>
+            
+            </summary>
+            <param in="query" name="ambiente" required="true"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorNivel(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param in="query" name="ambiente" required="true"></param>
+            <param in="query" name="titulo" required="true"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
