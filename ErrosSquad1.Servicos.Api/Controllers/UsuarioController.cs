@@ -33,6 +33,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
         
+        [Route("~/api/GetUsuario")]  
         [HttpGet]
         public IActionResult GetUsuario(string email){
             try{
@@ -42,6 +43,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                 return BadRequest(e.Message);
             } 
         }
+        [Route("~/api/CadastrarUsuario")]  
         [HttpPut]
         public IActionResult CadastrarUsuario([FromBody] Usuario usuario)
         {

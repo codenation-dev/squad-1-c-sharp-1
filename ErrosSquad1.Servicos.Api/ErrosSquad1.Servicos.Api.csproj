@@ -5,13 +5,10 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
-<<<<<<< HEAD
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>..\ErrosSquad1.Servicos.Api\ErrosSquad1.Servicos.Api.xml</DocumentationFile>
   </PropertyGroup>
 
-=======
->>>>>>> 120ce0b9ffe9d215120639b22ec772a4c56a3d8c
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />

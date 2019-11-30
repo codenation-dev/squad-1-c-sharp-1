@@ -30,7 +30,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
         public bool ConsistirUsuario(string email, string nome, string senha)
         {
             if(GetUsuario(email) != null)
-                throw new Exception("Cadastro Duplicado");
+                return false;
             
             if(ValidarLoginUsuario(email))
                 return true;
