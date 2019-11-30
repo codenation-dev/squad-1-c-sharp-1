@@ -7,6 +7,9 @@ using System.Collections.Generic;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
+    
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public class ErroController : ControllerBase<Erro, ErroDTO>
     {
         private readonly IErroApp app;
@@ -15,21 +18,14 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             this.app = app;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param in="query" name="ambiente" required="true"></param>
+        /// <returns></returns>
         [HttpGet]
-        public IActionResult ListarErrosPorNivel()
-        {
-            try
-            {
-                var erro = app.ListarErrosPorNivel();
-                return new OkObjectResult(erro);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        [HttpGet]
+        [ActionName("listar-por-nivel")]
+        [Route("{ambiente}")]
         public IActionResult ListarErrosPorNivel(string ambiente)
         {
             try
@@ -43,7 +39,16 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param in="query" name="ambiente" required="true"></param>
+        /// <param in="query" name="titulo" required="true"></param>
+        /// <returns></returns>
         [HttpGet]
+        [ActionName("listar-por-nivel")]
+        [Route("{ambiente}/{titulo}")]
         public IActionResult ListarErrosPorNivel(string ambiente, string titulo)
         {
             try
@@ -55,23 +60,11 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             {
                 return BadRequest(ex.Message);
             }
-        }
-
+        }        
+        
         [HttpGet]
-        public IActionResult ListarErrosPorFrequencia()
-        {
-            try
-            {
-                var erro = app.ListarErrosPorFrequencia();
-                return new OkObjectResult(erro);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
-        [HttpGet]
+        [ActionName("listar-por-frequencia")]
+        [Route("{ambiente}")]
         public IActionResult ListarErrosPorFrequencia(string ambiente)
         {
             try
@@ -86,6 +79,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpGet]
+        [ActionName("listar-por-frequencia")]
+        [Route("{ambiente}/{titulo}")]
         public IActionResult ListarErrosPorFrequencia(string ambiente, string titulo)
         {
             try
@@ -100,6 +95,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpPut]
+        [ActionName("arquivar")]
+        [Route("")]
         public IActionResult Arquivar([FromBody] List<Erro> erros)
         {
             try
