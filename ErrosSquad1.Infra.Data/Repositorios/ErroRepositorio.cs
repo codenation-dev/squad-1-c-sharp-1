@@ -11,6 +11,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
     {
         private const char cErroArquivado = 'A';
         private const char cErroValido = 'V';
+        private const string cAmbientePadrao = "Produção";
 
         private readonly AppDbContext contexto;
         public ErroRepositorio(AppDbContext contexto)
@@ -77,8 +78,10 @@ namespace ErrosSquad1.Infra.Data.Repositorios
 
         public List<Erro> ListarErrosPorFrequencia(string ambiente)
         {
+            string vAmbiente = ambiente == null ? cAmbientePadrao : ambiente;
+
             return ListarErrosPorFrequencia()
-                .Where(w => w.Ambiente.Nome == ambiente)
+                .Where(w => w.Ambiente.Nome == vAmbiente)
                 .ToList();
         }
 
@@ -98,8 +101,10 @@ namespace ErrosSquad1.Infra.Data.Repositorios
 
         public List<Erro> ListarErrosPorNivel(string ambiente)
         {
+            string vAmbiente = ambiente == null ? cAmbientePadrao : ambiente;
+
             return ListarErrosPorNivel()
-                .Where(w => w.Ambiente.Nome == ambiente)
+                .Where(w => w.Ambiente.Nome == vAmbiente)
                 .ToList();
         }
 
