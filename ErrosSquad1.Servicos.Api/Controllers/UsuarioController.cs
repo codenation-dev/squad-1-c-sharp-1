@@ -34,7 +34,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
         
         [HttpGet]
-        public IActionResult<Usuario> GetUsuario(string email){
+        public IActionResult GetUsuario(string email){
             try{
                 var user = app.GetUsuario(email);
                 return Ok(user);
