@@ -16,7 +16,42 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             this.app = app;
         }
 
-
+        public IActionResult ConsistirUsuario(string email, string nome, string senha){
+            try{
+                var resultado = app.ConsistirUsuario(email, nome, senha);
+                return Ok(resultado);
+            }catch(Exception e){
+                return BadRequest(e.Message);
+            }
+        }
+        public IActionResult ValidarLoginUsuario(string email){
+            try{
+                var resultado = app.ValidarLoginUsuario(email);
+                return Ok(resultado);
+            }catch(Exception e){
+                return BadRequest(e.Message);
+            }
+        }
+        
+        [HttpGet]
+        public IActionResult<Usuario> GetUsuario(string email){
+            try{
+                var user = app.GetUsuario(email);
+                return Ok(user);
+            }catch(Exception e){
+                throw BadRequest(e.Message);
+            } 
+        }
+        [HttpPut]
+        public IActionResult CadastrarUsuario([FromBody] Usuario usuario)
+        {
+            try{
+                app.CadastrarUsuario(usuario);
+                return Ok(true);
+            }catch(Exception e){
+                throw BadRequest(e.Message);
+            }
+        } 
 
     }
 }
