@@ -17,32 +17,24 @@ namespace ErrosSquad1.Dominio.Servicos
 
         public void CadastrarUsuario(Usuario usuario)
         {
-            if(ConsistirUsuario(usuario.Email, usuario.Nome, usuario.Senha))
-                users.Incluir(usuario);
+            users.CadastrarUsuario(usuario);
 
         }
 
         public bool ConsistirUsuario(string email, string nome, string senha)
         {
-            if(GetUsuario(email) != null)
-                throw new Exception("Cadastro Duplicado");
-            
-            if(ValidarLoginUsuario(email))
-                return true;
-            return false;      
+            users.ConsistirUsuario(email, nome, senha);     
             
         }
 
         public Usuario GetUsuario(string email)
         {
-            return users.Usuarios.Find(email);
+            users.GetUsuario(email);
         }
 
         public bool ValidarLoginUsuario(string email)
         {
-            if(GetUsuario(email) != null)
-                return false;
-            return true;
+            users.ValidarLoginUsuario(email);
         }
     }
 }
