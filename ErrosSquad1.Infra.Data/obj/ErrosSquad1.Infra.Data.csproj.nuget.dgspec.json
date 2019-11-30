@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {}
+    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
+    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
         "projectName": "ErrosSquad1.Dominio",
-        "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
-        "packagesPath": "C:\\Users\\melis\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj",
+        "packagesPath": "C:\\Users\\vcf_f\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\melis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vcf_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,17 +66,20 @@
         }
       }
     },
-    "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {
+    "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
         "projectName": "ErrosSquad1.Infra.Data",
-        "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\melis\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\obj\\",
+        "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\vcf_f\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\melis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vcf_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,8 +92,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
-                "projectPath": "E:\\GitHub\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj"
+              "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj": {
+                "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Dominio\\ErrosSquad1.Dominio.csproj"
               }
             }
           }
