@@ -69,7 +69,7 @@ namespace ErrosSquad1.Servicos.Api
                 string caminhoDocumentacao = Path.Combine(caminhoAplicacao, $"{ nomeAplicacao}.xml");
                 c.IncludeXmlComments(caminhoDocumentacao);
 
-                c.SwaggerDoc("v1", new Info { Title = "titulo", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "Erros da Squad1", Version = "v1" });
 
 
 

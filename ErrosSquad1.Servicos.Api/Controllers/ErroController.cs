@@ -13,34 +13,17 @@ namespace ErrosSquad1.Servicos.Api.Controllers
     public class ErroController : ControllerBase<Erro, ErroDTO>
     {
         private readonly IErroApp app;
+
         public ErroController(IErroApp app) : base(app)
         {
             this.app = app;
         }
 
         /// <summary>
-        /// Método para obter todos os erros ordenados por nível
+        /// 
         /// </summary>
-        /// <returns>
-        /// Retorna todos os erros
-        /// </returns>        
-        [HttpGet]
-        [ActionName("listar-por-nivel")]
-        [Route("")]
-        public IActionResult ListarErrosPorNivel()
-        {
-            try
-            {
-                var erro = app.ListarErrosPorNivel();
-
-                return new OkObjectResult(erro);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
+        /// <param in="query" name="ambiente" required="true"></param>
+        /// <returns></returns>
         [HttpGet]
         [ActionName("listar-por-nivel")]
         [Route("{ambiente}")]
@@ -57,6 +40,13 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param in="query" name="ambiente" required="true"></param>
+        /// <param in="query" name="titulo" required="true"></param>
+        /// <returns></returns>
         [HttpGet]
         [ActionName("listar-por-nivel")]
         [Route("{ambiente}/{titulo}")]
@@ -71,24 +61,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             {
                 return BadRequest(ex.Message);
             }
-        }
-
-        [HttpGet]
-        [ActionName("listar-por-frequencia")]
-        [Route("")]
-        public IActionResult ListarErrosPorFrequencia()
-        {
-            try
-            {
-                var erro = app.ListarErrosPorFrequencia();
-                return new OkObjectResult(erro);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
+        }        
+        
         [HttpGet]
         [ActionName("listar-por-frequencia")]
         [Route("{ambiente}")]
