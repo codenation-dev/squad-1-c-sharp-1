@@ -1,10 +1,10 @@
 ﻿using ErrosSquad1.Aplicacao.DTO;
 using ErrosSquad1.Aplicacao.Interfaces;
 using ErrosSquad1.Dominio.Entidades;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
@@ -39,7 +39,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                 var user = app.GetUsuario(email);
                 return Ok(user);
             }catch(Exception e){
-                throw BadRequest(e.Message);
+                return BadRequest(e.Message);
             } 
         }
         [HttpPut]
@@ -49,7 +49,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                 app.CadastrarUsuario(usuario);
                 return Ok(true);
             }catch(Exception e){
-                throw BadRequest(e.Message);
+                return BadRequest(e.Message);
             }
         } 
 

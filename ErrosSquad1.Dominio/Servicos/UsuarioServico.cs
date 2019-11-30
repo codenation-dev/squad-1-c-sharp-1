@@ -23,18 +23,18 @@ namespace ErrosSquad1.Dominio.Servicos
 
         public bool ConsistirUsuario(string email, string nome, string senha)
         {
-            users.ConsistirUsuario(email, nome, senha);     
+            return users.ConsistirUsuario(email, nome, senha);     
             
         }
 
         public Usuario GetUsuario(string email)
         {
-            users.GetUsuario(email);
+            return users.GetUsuario(email);
         }
 
         public bool ValidarLoginUsuario(string email)
         {
-            users.ValidarLoginUsuario(email);
+            return users.ValidarLoginUsuario(email);
         }
     }
 }

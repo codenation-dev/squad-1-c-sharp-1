@@ -9,7 +9,7 @@ namespace ErrosSquad1.Aplicacao.Servicos
     public class UsuarioApp : ServicoAppBase<Usuario, UsuarioDTO>, IUsuarioApp
     {
 
-        protected readonly IUsuarioApp servico;
+        protected readonly IUsuarioServico servico;
         protected readonly IMapper iMapper;
         public UsuarioApp(IMapper iMapper, IUsuarioServico servico) : base(iMapper, servico)
         {
@@ -17,7 +17,7 @@ namespace ErrosSquad1.Aplicacao.Servicos
             this.iMapper = iMapper;
         }
         public void CadastrarUsuario(Usuario usuario){
-            return servico.CadastrarUsuario(usuario);
+            servico.CadastrarUsuario(usuario);
         }
         public bool ConsistirUsuario(string email, string nome, string senha){
             return servico.ConsistirUsuario(email, nome, senha);
