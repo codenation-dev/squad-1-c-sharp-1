@@ -1,14 +1,17 @@
 ﻿using ErrosSquad1.Aplicacao.DTO;
 using ErrosSquad1.Aplicacao.Interfaces;
 using ErrosSquad1.Dominio.Entidades;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
     [Produces("application/json")]
-    [Route("api/[controller]/[action]")]
-    [ApiController]
+    [Route("api/dashboard")]
     public class ControllerBase<Entidade, EntidadeDTO> : Controller
         where Entidade : EntidadeBase
         where EntidadeDTO : BaseDTO
@@ -21,7 +24,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpGet]
-        [ActionName("listar-todos")]
         [Route("")]
         public IActionResult SelecionarTodos()
         {
@@ -37,7 +39,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpGet]
-        [ActionName("selecionar")]
         [Route("{id}")]
         public IActionResult SelecionarPorId(int id)
         {
@@ -53,8 +54,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpPost]
-        [ActionName("incluir")]
-        [Route("")]
         public IActionResult Incluir([FromBody] EntidadeDTO dado)
         {
             try
@@ -69,8 +68,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpPut]
-        [ActionName("alterar")]
-        [Route("")]
         public IActionResult Alterar([FromBody] EntidadeDTO dado)
         {
             try
@@ -85,7 +82,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         [HttpDelete]
-        [ActionName("excluir")]
         [Route("{id}")]
         public IActionResult Excluir(int id)
         {

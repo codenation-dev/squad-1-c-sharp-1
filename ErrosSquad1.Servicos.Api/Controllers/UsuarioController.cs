@@ -1,10 +1,10 @@
 ﻿using ErrosSquad1.Aplicacao.DTO;
 using ErrosSquad1.Aplicacao.Interfaces;
 using ErrosSquad1.Dominio.Entidades;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
@@ -16,7 +16,44 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             this.app = app;
         }
 
-
+        public IActionResult ConsistirUsuario(string email, string nome, string senha){
+            try{
+                var resultado = app.ConsistirUsuario(email, nome, senha);
+                return Ok(resultado);
+            }catch(Exception e){
+                return BadRequest(e.Message);
+            }
+        }
+        public IActionResult ValidarLoginUsuario(string email){
+            try{
+                var resultado = app.ValidarLoginUsuario(email);
+                return Ok(resultado);
+            }catch(Exception e){
+                return BadRequest(e.Message);
+            }
+        }
+        
+        [Route("~/api/GetUsuario")]  
+        [HttpGet]
+        public IActionResult GetUsuario(string email){
+            try{
+                var user = app.GetUsuario(email);
+                return Ok(user);
+            }catch(Exception e){
+                return BadRequest(e.Message);
+            } 
+        }
+        [Route("~/api/CadastrarUsuario")]  
+        [HttpPut]
+        public IActionResult CadastrarUsuario([FromBody] Usuario usuario)
+        {
+            try{
+                app.CadastrarUsuario(usuario);
+                return Ok(true);
+            }catch(Exception e){
+                return BadRequest(e.Message);
+            }
+        } 
 
     }
 }
