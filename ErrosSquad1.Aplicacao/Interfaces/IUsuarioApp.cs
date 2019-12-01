@@ -7,8 +7,10 @@ namespace ErrosSquad1.Aplicacao.Interfaces
     {
         void CadastrarUsuario(Usuario usuario);
         bool ConsistirUsuario(string email, string nome, string senha);
+        void AlterarUsuario (Usuario usuario);
         Usuario GetUsuario(string email);
-        bool ValidarLoginUsuario(string email);
+        string Hash(string senha);
+        bool ValidarLoginUsuario(string email, string senha);
 
     }
 }

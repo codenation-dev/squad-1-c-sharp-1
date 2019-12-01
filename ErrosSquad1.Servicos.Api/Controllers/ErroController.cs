@@ -7,8 +7,6 @@ using System.Collections.Generic;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
-    
-    [Route("api/[controller]/[action]")]
     [ApiController]
     public class ErroController : ControllerBase<Erro, ErroDTO>
     {

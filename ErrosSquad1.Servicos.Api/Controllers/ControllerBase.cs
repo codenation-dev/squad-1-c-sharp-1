@@ -72,22 +72,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
-        [HttpPut]
-        [ActionName("alterar")]
-        [Route("")]
-        public IActionResult Alterar([FromBody] EntidadeDTO dado)
-        {
-            try
-            {
-                app.Alterar(dado);
-                return new OkObjectResult(true);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         [HttpDelete]
         [ActionName("excluir")]
         [Route("{id}")]

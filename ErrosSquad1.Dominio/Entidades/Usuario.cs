@@ -13,13 +13,18 @@ namespace ErrosSquad1.Dominio.Entidades
         [Column("token"), MaxLength(40), Required]
         public string Token { get; set; }
 
-        [Column("nome"), MaxLength(100), Required]
+        [Column("nome"), MaxLength(100)]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public string Nome { get; set; }
 
-        [Column("email"), MaxLength(200), Required]
+        [Column("email"), MaxLength(200)]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
+        [EmailAddress(ErrorMessage = "O campo {0} está em formato inválido")]
         public string Email { get; set; }
 
-        [Column("senha"), MaxLength(30), Required]
+        [Column("senha")]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
+        [StringLength(30, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 6)]
         public string Senha { get; set; }
 
         public ICollection<Erro> Erros { get; set; }

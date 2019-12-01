@@ -21,11 +21,6 @@ namespace ErrosSquad1.Aplicacao.Servicos
             this.servico = servico;
         }
 
-        public void Alterar(TEntidadeDTO entidade)
-        {
-            servico.Alterar(iMapper.Map<TEntidade>(entidade));
-        }
-
         public void Excluir(int id)
         {
             servico.Excluir(id);

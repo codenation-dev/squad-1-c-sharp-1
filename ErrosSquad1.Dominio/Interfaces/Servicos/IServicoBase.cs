@@ -12,8 +12,6 @@ namespace ErrosSquad1.Dominio.Interfaces.Servicos
 
         void Excluir(TEntidade entidade);
 
-        void Alterar(TEntidade entidade);
-
         TEntidade SelecionarPorId(int id);
 
         IEnumerable<TEntidade> SelecionarTodos();

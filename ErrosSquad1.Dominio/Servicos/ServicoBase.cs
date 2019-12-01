@@ -14,11 +14,6 @@ namespace ErrosSquad1.Dominio.Servicos
             this.repositorio = repositorio;
         }
 
-        public void Alterar(TEntidade entidade)
-        {
-            repositorio.Alterar(entidade);
-        }
-
         public void Excluir(int id)
         {
             repositorio.Excluir(id);

@@ -11,10 +11,8 @@ namespace ErrosSquad1.Aplicacao.Interfaces
         void Incluir(TEntidadeDTO entidade);
 
         void Excluir(int id);
-                
+
         void Excluir(TEntidadeDTO entidade);
-        
-        void Alterar(TEntidadeDTO entidade);
         
         TEntidadeDTO SelecionarPorId(int id);
         

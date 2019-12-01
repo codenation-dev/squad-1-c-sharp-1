@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
-    [Route("v1/account")]
+    [Route("api/[controller]")]
     [ApiController]
     public class TokenTesteController : ControllerBase
     {

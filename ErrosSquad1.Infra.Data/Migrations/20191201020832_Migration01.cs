@@ -1,7 +1,8 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ErrosSquad1.Migrations
+namespace ErrosSquad1.Infra.Data.Migrations
 {
     public partial class Migration01 : Migration
     {
@@ -12,7 +13,7 @@ namespace ErrosSquad1.Migrations
                 columns: table => new
                 {
                     id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     nome = table.Column<string>(maxLength: 40, nullable: false)
                 },
                 constraints: table =>
@@ -25,7 +26,7 @@ namespace ErrosSquad1.Migrations
                 columns: table => new
                 {
                     id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     nome = table.Column<string>(maxLength: 20, nullable: false)
                 },
                 constraints: table =>
@@ -38,7 +39,7 @@ namespace ErrosSquad1.Migrations
                 columns: table => new
                 {
                     id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     token = table.Column<string>(maxLength: 40, nullable: false),
                     nome = table.Column<string>(maxLength: 100, nullable: false),
                     email = table.Column<string>(maxLength: 200, nullable: false),
@@ -54,7 +55,7 @@ namespace ErrosSquad1.Migrations
                 columns: table => new
                 {
                     id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     id_usuario = table.Column<int>(nullable: false),
                     id_nivel = table.Column<int>(nullable: false),
                     id_ambiente = table.Column<int>(nullable: false),

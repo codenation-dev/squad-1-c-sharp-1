@@ -10,6 +10,10 @@ namespace ErrosSquad1.Dominio.Interfaces.Servicos
 
         void CadastrarUsuario(Usuario usuario);
 
-        bool ValidarLoginUsuario(string email);
+        void AlterarUsuario(Usuario usuario);
+
+        string Hash(string senha);
+
+        bool ValidarLoginUsuario(string email, string senha);
     }
 }

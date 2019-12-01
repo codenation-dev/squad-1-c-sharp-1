@@ -21,6 +21,17 @@ namespace ErrosSquad1.Dominio.Servicos
 
         }
 
+        public void AlterarUsuario(Usuario usuario)
+        {
+            users.AlterarUsuario(usuario);
+
+        }
+
+        public string Hash(string senha)
+        {
+            return users.Hash(senha);
+        }
+
         public bool ConsistirUsuario(string email, string nome, string senha)
         {
             return users.ConsistirUsuario(email, nome, senha);     
@@ -32,9 +43,9 @@ namespace ErrosSquad1.Dominio.Servicos
             return users.GetUsuario(email);
         }
 
-        public bool ValidarLoginUsuario(string email)
+        public bool ValidarLoginUsuario(string email, string senha)
         {
-            return users.ValidarLoginUsuario(email);
+            return users.ValidarLoginUsuario(email, senha);
         }
     }
 }

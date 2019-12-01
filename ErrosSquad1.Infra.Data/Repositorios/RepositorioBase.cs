@@ -18,14 +18,6 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             this.contexto = contexto;
         }
 
-        public void Alterar(TEntidade entidade)
-        {
-            contexto.InitTransacao();
-            contexto.Set<TEntidade>().Attach(entidade);
-            contexto.Entry(entidade).State = EntityState.Modified;
-            contexto.SendChanges();
-        }
-
         public void Excluir(int id)
         {
             var entidade = SelecionarPorId(id);

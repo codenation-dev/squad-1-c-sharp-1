@@ -19,14 +19,24 @@ namespace ErrosSquad1.Aplicacao.Servicos
         public void CadastrarUsuario(Usuario usuario){
             servico.CadastrarUsuario(usuario);
         }
+
+        public void AlterarUsuario(Usuario usuario)
+        {
+            servico.AlterarUsuario(usuario);
+        }
         public bool ConsistirUsuario(string email, string nome, string senha){
             return servico.ConsistirUsuario(email, nome, senha);
         }
         public Usuario GetUsuario(string email){
             return servico.GetUsuario(email);
         }
-        public bool ValidarLoginUsuario(string email){
-            return servico.ValidarLoginUsuario(email);
+
+        public string Hash(string senha){
+            return servico.Hash(senha);
+        }
+
+        public bool ValidarLoginUsuario(string email, string senha){
+            return servico.ValidarLoginUsuario(email, senha);
         }
     }
 }

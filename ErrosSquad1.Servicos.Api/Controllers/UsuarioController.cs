@@ -8,7 +8,6 @@ using System.Collections.Generic;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
-    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UsuarioController : ControllerBase<Usuario, UsuarioDTO>
     {
@@ -28,16 +27,32 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
         
-        public IActionResult ValidarLoginUsuario(string email){
+        public IActionResult ValidarLoginUsuario(string email, string senha){
             try{
-                var resultado = app.ValidarLoginUsuario(email);
+                var resultado = app.ValidarLoginUsuario(email, senha);
                 return Ok(resultado);
             }catch(Exception e){
                 return BadRequest(e.Message);
             }
+        }
+        
+        [HttpPut]
+        [ActionName("alterar")]
+        [Route("")]
+        public IActionResult AlterarUsuario([FromBody] UsuarioDTO usuario)
+        {
+            try
+            {
+                app.AlterarUsuario(usuario);
+                return new OkObjectResult(true);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }*/
-        
-        
+
+
         [HttpGet]
         [Route("{email}")]
         public IActionResult GetUsuario(string email){

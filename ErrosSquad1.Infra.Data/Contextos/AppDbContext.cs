@@ -33,8 +33,6 @@ namespace ErrosSquad1.Infra.Data.Contextos
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.ApplyConfiguration(new ErroMap());
         }
 
         public IDbContextTransaction InitTransacao()
