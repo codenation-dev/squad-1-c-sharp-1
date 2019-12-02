@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ErrosSquad1.Infra.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20191201020832_Migration01")]
+    [Migration("20191202021320_Migration01")]
     partial class Migration01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -126,7 +126,7 @@ namespace ErrosSquad1.Infra.Data.Migrations
                     b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnName("senha")
-                        .HasMaxLength(30);
+                        .HasMaxLength(40);
 
                     b.Property<string>("Token")
                         .IsRequired()

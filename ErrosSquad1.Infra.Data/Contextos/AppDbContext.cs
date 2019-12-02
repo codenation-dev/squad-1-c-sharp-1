@@ -33,6 +33,11 @@ namespace ErrosSquad1.Infra.Data.Contextos
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Erro>()
+          .HasOne(p => p.Usuario)
+          .WithMany(c => c.Erros)
+          .HasForeignKey(p => p.IdUsuario);
         }
 
         public IDbContextTransaction InitTransacao()

@@ -16,19 +16,21 @@ namespace ErrosSquad1.Aplicacao.Servicos
             this.servico = servico;
             this.iMapper = iMapper;
         }
-        public void CadastrarUsuario(Usuario usuario){
-            servico.CadastrarUsuario(usuario);
+
+        public void CadastrarUsuario(UsuarioDTO usuario)
+        {
+            servico.CadastrarUsuario(iMapper.Map<Usuario>(usuario));
         }
 
-        public void AlterarUsuario(Usuario usuario)
+        public void AlterarUsuario(UsuarioDTO usuario)
         {
-            servico.AlterarUsuario(usuario);
+            servico.AlterarUsuario(iMapper.Map<Usuario>(usuario));
         }
         public bool ConsistirUsuario(string email, string nome, string senha){
             return servico.ConsistirUsuario(email, nome, senha);
         }
-        public Usuario GetUsuario(string email){
-            return servico.GetUsuario(email);
+        public UsuarioDTO GetUsuario(string email){
+            return iMapper.Map<UsuarioDTO>(servico.GetUsuario(email));
         }
 
         public string Hash(string senha){

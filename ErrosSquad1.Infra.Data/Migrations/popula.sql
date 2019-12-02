@@ -17,15 +17,15 @@ select 'Mensagem'
 go
 
 insert into usuario
-select '295ff4f6991fe3764fe205faa3bfeec6c64f7251', 'Melissa', 'melissa@email.com', 'mel'
+select '295ff4f6991fe3764fe205faa3bfeec6c64f7251', 'Melissa', 'melissa@email.com', '2f629c4d93e35c3d371f0463b040c6ef04a5c1e5'
 union
-select '19cedc70b9846cc6e5b76d69c493688b1959924d', 'Nadia', 'nadia@email.com', 'nad'
+select '19cedc70b9846cc6e5b76d69c493688b1959924d', 'Nadia', 'nadia@email.com', '43f2a2d2c86e22bc80f5acc690d97a5dcf4c4b2f'
 union
-select 'b5e4cc87874981498ca0250f80bc2f6058553c6d', 'Fabiana', 'fabiana@email.com', 'fab'
+select 'b5e4cc87874981498ca0250f80bc2f6058553c6d', 'Fabiana', 'fabiana@email.com', '3b4ead29b17aa89d104a4d78745c764db591c8f2'
 union
-select 'e603897da55c8aed41d7c8ffb23a4749bd3161f6', 'Marianna', 'marianna@email.com', 'mar'
+select 'e603897da55c8aed41d7c8ffb23a4749bd3161f6', 'Marianna', 'marianna@email.com', '1418c40237ee713b2752a18beb0b3335c688b68b'
 union
-select '0d06d594e0ed92bd0f0221fa34d9423a99166025', 'Sulamita', 'sulamita@email.com', 'sul'
+select '0d06d594e0ed92bd0f0221fa34d9423a99166025', 'Sulamita', 'sulamita@email.com', '853a003bbb3e18e43737ea49fd63e242c0a979cf'
 
 go
 

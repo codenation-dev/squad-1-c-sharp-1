@@ -64,10 +64,10 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             } 
         }
 
-        /*
-        [Route("")]  
-        [HttpPut]
-        public IActionResult CadastrarUsuario([FromBody] Usuario usuario)
+         
+        [HttpPost]
+        [Route("")]
+        public IActionResult CadastrarUsuario([FromBody] UsuarioDTO usuario)
         {
             try{
                 app.CadastrarUsuario(usuario);
@@ -75,7 +75,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }catch(Exception e){
                 return BadRequest(e.Message);
             }
-        } */
+        } 
 
     }
 }

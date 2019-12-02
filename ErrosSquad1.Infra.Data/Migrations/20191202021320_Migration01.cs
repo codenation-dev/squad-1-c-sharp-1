@@ -43,7 +43,7 @@ namespace ErrosSquad1.Infra.Data.Migrations
                     token = table.Column<string>(maxLength: 40, nullable: false),
                     nome = table.Column<string>(maxLength: 100, nullable: false),
                     email = table.Column<string>(maxLength: 200, nullable: false),
-                    senha = table.Column<string>(maxLength: 30, nullable: false)
+                    senha = table.Column<string>(maxLength: 40, nullable: false)
                 },
                 constraints: table =>
                 {

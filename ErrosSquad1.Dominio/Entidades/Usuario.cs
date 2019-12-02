@@ -24,7 +24,7 @@ namespace ErrosSquad1.Dominio.Entidades
 
         [Column("senha")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        [StringLength(30, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 6)]
+        [StringLength(40, ErrorMessage = "O campo {0} precisa ter entre {2} e 30 caracteres", MinimumLength = 6)]
         public string Senha { get; set; }
 
         public ICollection<Erro> Erros { get; set; }
