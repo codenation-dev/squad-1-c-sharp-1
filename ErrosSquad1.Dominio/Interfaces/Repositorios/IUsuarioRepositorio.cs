@@ -12,7 +12,7 @@ namespace ErrosSquad1.Dominio.Interfaces.Repositorios
 
         void AlterarUsuario(Usuario usuario);
 
-        bool ValidarLoginUsuario(string email, string senha);
+        Usuario ValidarLoginUsuario(string email, string senha);
 
         string Hash(string senha);
     }

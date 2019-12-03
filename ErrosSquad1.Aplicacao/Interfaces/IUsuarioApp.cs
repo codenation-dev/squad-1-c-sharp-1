@@ -10,7 +10,7 @@ namespace ErrosSquad1.Aplicacao.Interfaces
         void AlterarUsuario (UsuarioDTO usuario);
         UsuarioDTO GetUsuario(string email);
         string Hash(string senha);
-        bool ValidarLoginUsuario(string email, string senha);
+        UsuarioDTO ValidarLoginUsuario(string email, string senha);
 
     }
 }

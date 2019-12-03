@@ -43,7 +43,7 @@ namespace ErrosSquad1.Dominio.Servicos
             return users.GetUsuario(email);
         }
 
-        public bool ValidarLoginUsuario(string email, string senha)
+        public Usuario ValidarLoginUsuario(string email, string senha)
         {
             return users.ValidarLoginUsuario(email, senha);
         }

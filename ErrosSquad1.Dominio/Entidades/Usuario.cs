@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace ErrosSquad1.Dominio.Entidades
 {
     [Table("usuario")]
-    public class Usuario : EntidadeBase
+    public class Usuario :  EntidadeBase
     {
         /*[Key, Column("id"), Required]
         public int Id { get; set; }*/

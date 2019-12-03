@@ -72,14 +72,14 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             return users.Set<Usuario>().Where(x => x.Email.Equals(email)).FirstOrDefault();
         }
 
-        public bool ValidarLoginUsuario(string email, string senha)
+        public Usuario ValidarLoginUsuario(string email, string senha)
         {
             var usuario = GetUsuario(email);
 
             if(usuario != null && usuario.Senha == Hash(senha))
-                return true;
+                return usuario;
 
-            return false;
+            return new Usuario();
         }
     }
 }

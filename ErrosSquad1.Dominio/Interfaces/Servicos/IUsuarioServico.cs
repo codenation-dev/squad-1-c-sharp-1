@@ -14,6 +14,6 @@ namespace ErrosSquad1.Dominio.Interfaces.Servicos
 
         string Hash(string senha);
 
-        bool ValidarLoginUsuario(string email, string senha);
+        Usuario ValidarLoginUsuario(string email, string senha);
     }
 }
