@@ -11,7 +11,9 @@ using System.Threading.Tasks;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
+    
     [ApiController]
+   
     public class UsuarioController : ControllerBase<Usuario, UsuarioDTO>
     {
         private readonly IUsuarioApp app;
@@ -32,7 +34,8 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         [HttpPost]
         [ActionName("validar-login-usuario")]
         [Route("login")]
-        public async Task<ActionResult<dynamic>> ValidarLoginUsuario([FromBody] string email, string senha){
+        [AllowAnonymous]
+        public async Task<ActionResult<dynamic>> ValidarLoginUsuario(string email, string senha){
             try{
                 var usuario = app.ValidarLoginUsuario(email, senha);
                 if (usuario == null)
@@ -47,7 +50,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                     return new
                     {
                         user = usuario,
-                        token = token
                     };
                     //return Ok(usuario);  
                 }
