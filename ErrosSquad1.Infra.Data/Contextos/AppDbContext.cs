@@ -2,6 +2,7 @@
 using ErrosSquad1.Dominio.Entidades;
 using ErrosSquad1.Infra.Data.Mapeamentos;
 using Microsoft.EntityFrameworkCore.Storage;
+using System.ComponentModel.DataAnnotations.Schema;
 using System;
 
 namespace ErrosSquad1.Infra.Data.Contextos
@@ -38,6 +39,8 @@ namespace ErrosSquad1.Infra.Data.Contextos
           .HasOne(p => p.Usuario)
           .WithMany(c => c.Erros)
           .HasForeignKey(p => p.IdUsuario);
+
+            
         }
 
         public IDbContextTransaction InitTransacao()

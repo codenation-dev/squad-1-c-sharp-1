@@ -35,7 +35,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
 
         private int RetornarFrequencia(string titulo)
         {
-            return contexto.Set<Erro>().Where(e => e.Titulo == titulo).Count();
+            return contexto.Set<Erro>().Where(e => e.Titulo.ToLower() == titulo.ToLower()).Count();
         }
 
         private List<Erro> ListarErros()
@@ -72,14 +72,14 @@ namespace ErrosSquad1.Infra.Data.Repositorios
         public List<Erro> ListarErrosPorFrequencia(string ambiente)
         {
             return ListarErrosPorFrequencia()
-                .Where(w => w.Ambiente.Nome == ambiente)
+                .Where(w => w.Ambiente.Nome.ToLower() == ambiente.ToLower())
                 .ToList();
         }
 
         public List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo)
         {
             return ListarErrosPorFrequencia(ambiente)
-                .Where(w => w.Titulo == titulo)
+                .Where(w => w.Titulo.ToLower() == titulo.ToLower())
                 .ToList();
         }
 
@@ -93,14 +93,14 @@ namespace ErrosSquad1.Infra.Data.Repositorios
         public List<Erro> ListarErrosPorNivel(string ambiente)
         {
             return ListarErrosPorNivel()
-                .Where(w => w.Ambiente.Nome == ambiente)                
+                .Where(w => w.Ambiente.Nome.ToLower() == ambiente.ToLower())                
                 .ToList();
         }
 
         public List<Erro> ListarErrosPorNivel(string ambiente, string titulo)
         {
             return ListarErrosPorNivel(ambiente)
-                .Where(w => w.Titulo == titulo)
+                .Where(w => w.Titulo.ToLower() == titulo.ToLower())
                 .ToList();
         }
 

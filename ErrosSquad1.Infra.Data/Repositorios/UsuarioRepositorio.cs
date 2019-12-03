@@ -22,14 +22,18 @@ namespace ErrosSquad1.Infra.Data.Repositorios
 
         public void CadastrarUsuario(Usuario usuario)
         {            
-            if(ConsistirUsuario(usuario.Email, usuario.Nome, usuario.Senha)){
+            if(ConsistirUsuario(usuario.Email, usuario.Nome, usuario.Senha))
+            {
                 users.InitTransacao();
-                Hash(usuario.Senha);
+                usuario.Senha = Hash(usuario.Senha);
                 users.Set<Usuario>().Attach(usuario);
-                users.Entry(usuario).State = EntityState.Modified;
+                //users.Entry(usuario).State = EntityState.Modified;
+                users.SendChanges();
             }
-            users.SendChanges(); 
-
+            else
+            {
+                throw new FormatException();
+            }
         }
 
         public void AlterarUsuario(Usuario usuario)
@@ -37,7 +41,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             if (ConsistirUsuario(usuario.Email, usuario.Nome, usuario.Senha))
             {
                 users.InitTransacao();
-                Hash(usuario.Senha);
+                usuario.Senha = Hash(usuario.Senha);
                 users.Set<Usuario>().Attach(usuario);
                 users.Entry(usuario).State = EntityState.Modified;
             }

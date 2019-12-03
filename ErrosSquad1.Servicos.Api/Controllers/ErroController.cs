@@ -1,6 +1,7 @@
 ﻿using ErrosSquad1.Aplicacao.DTO;
 using ErrosSquad1.Aplicacao.Interfaces;
 using ErrosSquad1.Dominio.Entidades;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Collections.Generic;
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
     [ApiController]
+    [Authorize]
     public class ErroController : ControllerBase<Erro, ErroDTO>
     {
         private readonly IErroApp app;
