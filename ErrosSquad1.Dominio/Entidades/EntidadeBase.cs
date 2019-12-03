@@ -7,5 +7,7 @@ namespace ErrosSquad1.Dominio.Entidades
     {
         [Key, Column("id"), Required]
         public int Id { get; set; }
+
+       
     }
 }

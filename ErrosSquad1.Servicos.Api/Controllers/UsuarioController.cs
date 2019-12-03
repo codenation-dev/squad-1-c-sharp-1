@@ -1,10 +1,13 @@
-﻿using ErrosSquad1.Aplicacao.DTO;
+﻿using AutoMapper;
+using ErrosSquad1.Aplicacao.DTO;
 using ErrosSquad1.Aplicacao.Interfaces;
 using ErrosSquad1.Dominio.Entidades;
+using ErrosSquad1.Dominio.Servicos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
@@ -12,61 +15,55 @@ namespace ErrosSquad1.Servicos.Api.Controllers
     public class UsuarioController : ControllerBase<Usuario, UsuarioDTO>
     {
         private readonly IUsuarioApp app;
-        public UsuarioController(IUsuarioApp app) : base(app)
+        private readonly IMapper mapper;
+        public UsuarioController(IUsuarioApp app, IMapper mapper) : base(app)
         {
             this.app = app;
+            this.mapper = mapper;
         }
 
-        /*
-         * public IActionResult ConsistirUsuario(string email, string nome, string senha){
-            try{
-                var resultado = app.ConsistirUsuario(email, nome, senha);
-                return Ok(resultado);
-            }catch(Exception e){
-                return BadRequest(e.Message);
-            }
-        }
-        
-        public IActionResult ValidarLoginUsuario(string email, string senha){
-            try{
-                var resultado = app.ValidarLoginUsuario(email, senha);
-                return Ok(resultado);
-            }catch(Exception e){
-                return BadRequest(e.Message);
-            }
-        }
-        
-        [HttpPut]
-        [ActionName("alterar")]
-        [Route("")]
-        public IActionResult AlterarUsuario([FromBody] UsuarioDTO usuario)
-        {
-            try
-            {
-                app.AlterarUsuario(usuario);
-                return new OkObjectResult(true);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }*/
 
-
-        [HttpGet]
-        [Route("{email}")]
-        public IActionResult GetUsuario(string email){
-            try{
-                var user = app.GetUsuario(email);
-                return Ok(user);
-            }catch(Exception e){
-                return BadRequest(e.Message);
-            } 
-        }
-
-         
+        /// <summary>
+        /// O metodo valida os dados do login passados pelo usuário
+        /// </summary>
+        /// <param in="query" name="email" required="true"></param>
+        /// <param in="query" name="senha" required="true"></param>
+        /// <returns>Login e senha válidos - retorna status OK, inválidos - retorna BadRequest</returns>
         [HttpPost]
-        [Route("")]
+        [ActionName("validar-login-usuario")]
+        [Route("login")]
+        public async Task<ActionResult<dynamic>> ValidarLoginUsuario([FromBody] string email, string senha){
+            try{
+                var usuario = app.ValidarLoginUsuario(email, senha);
+                if (usuario == null)
+                {
+                    return NotFound(new { message = "Login ou senha inválidos" });            
+                }
+                else 
+                {
+                    var token = TokenServico.GerarToken(mapper.Map<Usuario>(usuario));
+                    usuario.Token = token;
+                    usuario.Senha = "";
+                    return new
+                    {
+                        user = usuario,
+                        token = token
+                    };
+                    //return Ok(usuario);  
+                }
+            }
+            catch(Exception e){
+                return BadRequest(e.Message);
+            }
+        }
+
+        /// <summary>
+        /// Grava os dados do usuario no banco de dados
+        /// </summary>
+        /// <returns>Cadastrado com sucesso - retorna status OK, caso contrário - retorna BadRequest</returns>
+        [HttpPost]
+        [Route("cadastro")]
+        [ActionName("cadastrar-usuario")]
         public IActionResult CadastrarUsuario([FromBody] UsuarioDTO usuario)
         {
             try{
@@ -76,6 +73,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                 return BadRequest(e.Message);
             }
         } 
-
+       
     }
 }

@@ -37,8 +37,8 @@ namespace ErrosSquad1.Aplicacao.Servicos
             return servico.Hash(senha);
         }
 
-        public bool ValidarLoginUsuario(string email, string senha){
-            return servico.ValidarLoginUsuario(email, senha);
+        public UsuarioDTO ValidarLoginUsuario(string email, string senha){
+            return iMapper.Map<UsuarioDTO>(servico.ValidarLoginUsuario(email, senha));
         }
     }
 }

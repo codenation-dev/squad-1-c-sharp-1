@@ -94,7 +94,6 @@ namespace ErrosSquad1.Servicos.Api.Controllers
 
         [HttpPut]
         [ActionName("arquivar")]
-        [Route("")]
         public IActionResult Arquivar([FromBody] List<Erro> erros)
         {
             try

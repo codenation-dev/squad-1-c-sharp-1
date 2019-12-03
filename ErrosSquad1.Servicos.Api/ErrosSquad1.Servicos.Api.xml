@@ -19,5 +19,19 @@
             <param in="query" name="titulo" required="true"></param>
             <returns></returns>
         </member>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.UsuarioController.ValidarLoginUsuario(System.String,System.String)">
+            <summary>
+            O metodo valida os dados do login passados pelo usuário
+            </summary>
+            <param in="query" name="email" required="true"></param>
+            <param in="query" name="senha" required="true"></param>
+            <returns>Login e senha válidos - retorna status OK, inválidos - retorna BadRequest</returns>
+        </member>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.UsuarioController.CadastrarUsuario(ErrosSquad1.Aplicacao.DTO.UsuarioDTO)">
+            <summary>
+            Grava os dados do usuario no banco de dados
+            </summary>
+            <returns>Cadastrado com sucesso - retorna status OK, caso contrário - retorna BadRequest</returns>
+        </member>
     </members>
 </doc>
