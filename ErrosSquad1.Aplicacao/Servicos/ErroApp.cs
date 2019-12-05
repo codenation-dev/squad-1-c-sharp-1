@@ -18,6 +18,11 @@ namespace ErrosSquad1.Aplicacao.Servicos
             this.servico = servico;
         }
 
+        public void Incluir(Erro erro)
+        {
+            servico.Incluir(iMapper.Map<Erro>(erro));
+        }
+
         public void Arquivar(List<Erro> erros)
         {
             servico.Arquivar(erros);

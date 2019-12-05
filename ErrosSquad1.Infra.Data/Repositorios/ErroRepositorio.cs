@@ -20,6 +20,13 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             this.contexto = contexto;
         }
 
+        public void Incluir(Erro erro)
+        {
+            contexto.InitTransacao();
+            contexto.Set<Erro>().Add(erro);
+            contexto.SendChanges();
+        }
+
         public void Arquivar(List<Erro> erros)
         {
             contexto.InitTransacao();

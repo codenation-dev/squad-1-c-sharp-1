@@ -15,7 +15,9 @@ namespace ErrosSquad1.Dominio.Interfaces.Repositorios
 
         List<Erro> ListarErrosPorFrequencia(string ambiente);
 
-        List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo);       
+        List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo);
+
+        void Incluir(Erro erro);
 
         void Arquivar(List<Erro> erros);
 
