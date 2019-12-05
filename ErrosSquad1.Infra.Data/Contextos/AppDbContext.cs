@@ -2,13 +2,22 @@
 using ErrosSquad1.Dominio.Entidades;
 using ErrosSquad1.Infra.Data.Mapeamentos;
 using Microsoft.EntityFrameworkCore.Storage;
-using System.ComponentModel.DataAnnotations.Schema;
 using System;
+using Microsoft.Extensions.Configuration;
 
 namespace ErrosSquad1.Infra.Data.Contextos
 {
     public class AppDbContext : DbContext
     {
+        private IConfiguration Configuration { get; }
+
+        public AppDbContext(
+                    DbContextOptions<AppDbContext> options,
+                    IConfiguration configuration) : base(options)
+        {
+            Configuration = configuration;
+        }
+
         public DbSet<Usuario> Usuarios { get; set; }
 
         public DbSet<Nivel> Niveis { get; set; }
@@ -17,30 +26,28 @@ namespace ErrosSquad1.Infra.Data.Contextos
 
         public DbSet<Erro> Erros { get; set; }
 
-        public IDbContextTransaction Transaction { get; private set; }
 
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){
-            
-        }
+        public IDbContextTransaction Transaction { get; private set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnConfiguring(optionsBuilder);
-            
-            //todo : está duplicada a string de conexão rever
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=projeto_final;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            IConfigurationRoot config = new ConfigurationBuilder()
+            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+            .AddJsonFile("appsettings.json")
+            .Build();
+
+            optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Erro>()
-          .HasOne(p => p.Usuario)
-          .WithMany(c => c.Erros)
-          .HasForeignKey(p => p.IdUsuario);
+            modelBuilder.ApplyConfiguration(new ErroMap());
+            modelBuilder.ApplyConfiguration(new NivelMap());
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
+            modelBuilder.ApplyConfiguration(new AmbienteMap());
 
-            
         }
 
         public IDbContextTransaction InitTransacao()

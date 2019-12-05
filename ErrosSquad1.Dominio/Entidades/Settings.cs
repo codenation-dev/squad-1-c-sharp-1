@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ErrosSquad1.Dominio.Entidades
+﻿namespace ErrosSquad1.Dominio.Entidades
 {
     public static class Settings
     {

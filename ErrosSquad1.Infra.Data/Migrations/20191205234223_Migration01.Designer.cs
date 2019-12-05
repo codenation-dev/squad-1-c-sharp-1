@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ErrosSquad1.Infra.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20191202021320_Migration01")]
+    [Migration("20191205234223_Migration01")]
     partial class Migration01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,8 @@ namespace ErrosSquad1.Infra.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DataHora")
-                        .HasColumnName("data_hora");
+                        .HasColumnName("data_hora")
+                        .HasColumnType("datetime");
 
                     b.Property<string>("Detalhe")
                         .IsRequired()
@@ -129,7 +130,6 @@ namespace ErrosSquad1.Infra.Data.Migrations
                         .HasMaxLength(40);
 
                     b.Property<string>("Token")
-                        .IsRequired()
                         .HasColumnName("token")
                         .HasMaxLength(40);
 

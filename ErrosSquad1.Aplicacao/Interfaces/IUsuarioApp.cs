@@ -8,8 +8,8 @@ namespace ErrosSquad1.Aplicacao.Interfaces
         void CadastrarUsuario(UsuarioDTO usuario);
         bool ConsistirUsuario(string email, string nome, string senha);
         void AlterarUsuario (UsuarioDTO usuario);
-        UsuarioDTO GetUsuario(string email);
-        string Hash(string senha);
+        UsuarioDTO SelecionarPorEmail(string email);
+        //string Hash(string senha);
         UsuarioDTO ValidarLoginUsuario(string email, string senha);
 
     }

@@ -21,20 +21,15 @@ namespace ErrosSquad1.Aplicacao.Servicos
             this.servico = servico;
         }
 
-        public void Excluir(int id)
+        /*public void Excluir(int id)
         {
             servico.Excluir(id);
-        }
+        }*/
 
         public void Excluir(TEntidadeDTO entidade)
         {
             servico.Excluir(iMapper.Map<TEntidade>(entidade));
         }
-
-        /*public void Incluir(TEntidadeDTO entidade)
-        {
-            servico.Incluir(iMapper.Map<TEntidade>(entidade));
-        }*/
 
         public TEntidadeDTO SelecionarPorId(int id)
         {

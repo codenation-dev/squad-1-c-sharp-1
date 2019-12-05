@@ -56,31 +56,15 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
-        /*[HttpPost]
-        [ActionName("incluir")]
-        [Route("")]
-        public IActionResult Incluir([FromBody] EntidadeDTO dado)
-        {
-            try
-            {
-                app.Incluir(dado);
-                return new OkResult();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }*/
-
         [HttpDelete]
         [ActionName("excluir")]
-        [Route("{id}")]
-        public IActionResult Excluir(int id)
+        [Route("")]
+        public IActionResult Excluir([FromBody] EntidadeDTO dado)
         {
             try
             {
-                app.Excluir(id);
-                return new OkObjectResult(true);
+                app.Excluir(dado);
+                return NoContent();
             }
             catch (Exception ex)
             {

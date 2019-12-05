@@ -6,17 +6,39 @@
     <members>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorNivel(System.String)">
             <summary>
-            
+            Retorna uma lista com os erros do ambiente X ordenados por nível
             </summary>
             <param in="query" name="ambiente" required="true"></param>
             <returns></returns>
         </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorNivel(System.String,System.String)">
             <summary>
-            
+            Retorna uma lista com os erros do ambiente X com título Y ordenados por nível
             </summary>
             <param in="query" name="ambiente" required="true"></param>
             <param in="query" name="titulo" required="true"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorFrequencia(System.String)">
+            <summary>
+            Retorna uma lista com os erros do ambiente X ordenados de forma decrescente por frequência
+            </summary>
+            <param name="ambiente"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorFrequencia(System.String,System.String)">
+            <summary>
+            Retorna uma lista com os erros do ambiente X com título Y ordenados de forma decrescente por frequência
+            </summary>
+            <param name="ambiente"></param>
+            <param name="titulo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.Arquivar(System.Collections.Generic.List{ErrosSquad1.Aplicacao.DTO.ErroDTO})">
+            <summary>
+            Arquiva a lista de erros
+            </summary>
+            <param name="erros"></param>
             <returns></returns>
         </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.UsuarioController.ValidarLoginUsuario(System.String,System.String)">

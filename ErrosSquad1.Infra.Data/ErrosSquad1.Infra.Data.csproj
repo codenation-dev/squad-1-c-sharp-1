@@ -15,6 +15,8 @@
     <Compile Remove="Migrations\20191202013928_Migration01.Designer.cs" />
     <Compile Remove="Migrations\20191202020932_Migration01.cs" />
     <Compile Remove="Migrations\20191202020932_Migration01.Designer.cs" />
+    <Compile Remove="Migrations\20191202021320_Migration01.cs" />
+    <Compile Remove="Migrations\20191202021320_Migration01.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +27,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>

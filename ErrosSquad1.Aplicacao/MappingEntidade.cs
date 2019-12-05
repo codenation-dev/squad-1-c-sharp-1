@@ -8,10 +8,8 @@ namespace ErrosSquad1.Aplicacao
     {
         public MappingEntidade()
         {
-            CreateMap<Erro, ErroDTO>();
-            CreateMap<ErroDTO, Erro>();
-            CreateMap<Usuario, UsuarioDTO>();
-            CreateMap<UsuarioDTO, Usuario>();
+            CreateMap<Erro, ErroDTO>().ReverseMap();
+            CreateMap<Usuario, UsuarioDTO>().ReverseMap();
         }
     }
 }

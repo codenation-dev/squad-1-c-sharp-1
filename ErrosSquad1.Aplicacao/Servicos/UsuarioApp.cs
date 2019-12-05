@@ -29,13 +29,13 @@ namespace ErrosSquad1.Aplicacao.Servicos
         public bool ConsistirUsuario(string email, string nome, string senha){
             return servico.ConsistirUsuario(email, nome, senha);
         }
-        public UsuarioDTO GetUsuario(string email){
-            return iMapper.Map<UsuarioDTO>(servico.GetUsuario(email));
+        public UsuarioDTO SelecionarPorEmail(string email){
+            return iMapper.Map<UsuarioDTO>(servico.SelecionarPorEmail(email));
         }
 
-        public string Hash(string senha){
+        /*public string Hash(string senha){
             return servico.Hash(senha);
-        }
+        }*/
 
         public UsuarioDTO ValidarLoginUsuario(string email, string senha){
             return iMapper.Map<UsuarioDTO>(servico.ValidarLoginUsuario(email, senha));

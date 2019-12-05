@@ -9,9 +9,10 @@ namespace ErrosSquad1.Infra.Data.Mapeamentos
     {
         public virtual void Configure(EntityTypeBuilder<T> builder)
         {
+
             builder.HasKey(c => c.Id);
 
-            builder.Property(c => c.Id).IsRequired().HasColumnName("Id");
+            builder.Property(c => c.Id).HasColumnName("id").HasDefaultValue(0).IsRequired().UseSqlServerIdentityColumn();
         }
     }
 }

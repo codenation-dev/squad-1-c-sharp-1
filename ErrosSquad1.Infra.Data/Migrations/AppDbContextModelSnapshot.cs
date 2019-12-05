@@ -44,7 +44,8 @@ namespace ErrosSquad1.Infra.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DataHora")
-                        .HasColumnName("data_hora");
+                        .HasColumnName("data_hora")
+                        .HasColumnType("datetime");
 
                     b.Property<string>("Detalhe")
                         .IsRequired()

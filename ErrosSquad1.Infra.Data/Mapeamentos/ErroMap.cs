@@ -12,10 +12,34 @@ namespace ErrosSquad1.Infra.Data.Mapeamentos
     {
         public override void Configure(EntityTypeBuilder<Erro> builder)
         {
-            /* base.Configure(builder);
-            builder.ToTable("prato");
-            builder.Property(c => c.Nome).IsRequired().HasColumnName("Nome").HasMaxLength(100);
-            builder.Property(c => c.Preco).IsRequired().HasColumnName("Preco");*/
+            base.Configure(builder);
+
+            builder.ToTable("erro");
+
+            builder.HasKey(c => c.Id);
+
+            builder.Property(c => c.IdUsuario).IsRequired().HasColumnName("id_usuario");
+
+            builder.Property(c => c.IdNivel).IsRequired().HasColumnName("id_nivel");
+
+            builder.Property(c => c.IdAmbiente).IsRequired().HasColumnName("id_ambiente");
+
+            builder.Property(c => c.Origem).IsRequired().HasColumnName("origem").HasMaxLength(16);
+
+            builder.Property(c => c.DataHora).IsRequired().HasColumnName("data_hora").HasColumnType("datetime");
+
+            builder.Property(c => c.Titulo).IsRequired().HasColumnName("titulo").HasMaxLength(100);
+
+            builder.Property(c => c.Detalhe).IsRequired().HasColumnName("detalhe").HasMaxLength(2000);
+
+            builder.Property(c => c.Status).IsRequired().HasColumnName("status").HasMaxLength(1);
+
+            builder.HasOne(p => p.Usuario).WithMany(c => c.Erros).HasForeignKey(p => p.IdUsuario);
+
+            builder.HasOne(p => p.Ambiente).WithMany(c => c.Erros).HasForeignKey(p => p.IdAmbiente);
+
+            builder.HasOne(p => p.Nivel).WithMany(c => c.Erros).HasForeignKey(p => p.IdNivel);
+
         }
     }
 }

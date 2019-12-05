@@ -3595,7 +3595,8 @@
           "ErrosSquad1.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6"
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
+          "Microsoft.Extensions.Configuration.Json": "2.2.0"
         },
         "compile": {
           "bin/placeholder/ErrosSquad1.Infra.Data.dll": {}
@@ -10488,23 +10489,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gecap\\.nuget\\packages\\": {},
+    "C:\\Users\\vcf_f\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Servicos.Api\\ErrosSquad1.Servicos.Api.csproj",
+      "projectUniqueName": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Servicos.Api\\ErrosSquad1.Servicos.Api.csproj",
       "projectName": "ErrosSquad1.Servicos.Api",
-      "projectPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Servicos.Api\\ErrosSquad1.Servicos.Api.csproj",
-      "packagesPath": "C:\\Users\\gecap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Servicos.Api\\obj\\",
+      "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Servicos.Api\\ErrosSquad1.Servicos.Api.csproj",
+      "packagesPath": "C:\\Users\\vcf_f\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Servicos.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gecap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vcf_f\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10517,14 +10518,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj": {
-              "projectPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj"
+            "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj": {
+              "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Aplicacao\\ErrosSquad1.Aplicacao.csproj"
             },
-            "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj"
+            "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj": {
+              "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.Data\\ErrosSquad1.Infra.Data.csproj"
             },
-            "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.IoC\\ErrosSquad1.Infra.IoC.csproj": {
-              "projectPath": "C:\\Users\\gecap\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.IoC\\ErrosSquad1.Infra.IoC.csproj"
+            "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.IoC\\ErrosSquad1.Infra.IoC.csproj": {
+              "projectPath": "C:\\Users\\vcf_f\\codenation\\central-erros\\squad-1-c-sharp-easynvest-1\\ErrosSquad1.Infra.IoC\\ErrosSquad1.Infra.IoC.csproj"
             }
           }
         }

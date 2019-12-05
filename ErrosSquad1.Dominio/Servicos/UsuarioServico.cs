@@ -27,10 +27,10 @@ namespace ErrosSquad1.Dominio.Servicos
 
         }
 
-        public string Hash(string senha)
+        /*public string Hash(string senha)
         {
             return users.Hash(senha);
-        }
+        }*/
 
         public bool ConsistirUsuario(string email, string nome, string senha)
         {
@@ -38,9 +38,9 @@ namespace ErrosSquad1.Dominio.Servicos
             
         }
 
-        public Usuario GetUsuario(string email)
+        public Usuario SelecionarPorEmail(string email)
         {
-            return users.GetUsuario(email);
+            return users.SelecionarPorEmail(email);
         }
 
         public Usuario ValidarLoginUsuario(string email, string senha)
