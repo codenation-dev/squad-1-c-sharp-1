@@ -19,6 +19,11 @@ namespace ErrosSquad1.Dominio.Servicos
             repositorio.Arquivar(erros);
         }
 
+        public void Incluir(Erro erro)
+        {
+            repositorio.Incluir(erro);
+        }
+
         public List<Erro> ListarErrosPorFrequencia()
         {
             return repositorio.ListarErrosPorFrequencia();

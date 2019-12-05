@@ -36,12 +36,12 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             contexto.SendChanges();
         }
 
-        public void Incluir(TEntidade entidade)
+        /*public void Incluir(TEntidade entidade)
         {
             contexto.InitTransacao();
             contexto.Set<TEntidade>().Add(entidade);
             contexto.SendChanges();
-        }
+        }*/
 
         public TEntidade SelecionarPorId(int id)
         {
