@@ -127,7 +127,6 @@ namespace ErrosSquad1.Infra.Data.Migrations
                         .HasMaxLength(40);
 
                     b.Property<string>("Token")
-                        .IsRequired()
                         .HasColumnName("token")
                         .HasMaxLength(40);
 
