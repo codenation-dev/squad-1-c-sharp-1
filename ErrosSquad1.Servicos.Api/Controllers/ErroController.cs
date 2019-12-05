@@ -105,6 +105,22 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
+        [HttpPost]
+        [ActionName("incluir")]
+        [Route("")]
+        public IActionResult Incluir([FromBody] Erro erro)
+        {
+            try
+            {
+                app.Incluir(erro);
+                return new OkResult();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        
         /// <summary>
         /// Arquiva a lista de erros
         /// </summary>

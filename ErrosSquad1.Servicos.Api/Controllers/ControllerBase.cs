@@ -56,7 +56,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
-        [HttpPost]
+        /*[HttpPost]
         [ActionName("incluir")]
         [Route("")]
         public IActionResult Incluir([FromBody] EntidadeDTO dado)
@@ -70,7 +70,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             {
                 return BadRequest(ex.Message);
             }
-        }
+        }*/
 
         [HttpDelete]
         [ActionName("excluir")]

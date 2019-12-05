@@ -24,10 +24,10 @@ namespace ErrosSquad1.Dominio.Servicos
             repositorio.Excluir(entidade);
         }
 
-        public void Incluir(TEntidade entidade)
+        /*public void Incluir(TEntidade entidade)
         {
             repositorio.Incluir(entidade);
-        }
+        }*/
 
         public TEntidade SelecionarPorId(int id)
         {

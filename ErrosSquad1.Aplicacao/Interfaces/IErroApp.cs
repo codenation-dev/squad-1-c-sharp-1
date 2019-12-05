@@ -18,6 +18,8 @@ namespace ErrosSquad1.Aplicacao.Interfaces
 
         List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo);
 
+        void Incluir(Erro erro);
+
         void Arquivar(List<Erro> erros);
     }
 }

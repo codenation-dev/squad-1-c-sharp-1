@@ -31,10 +31,10 @@ namespace ErrosSquad1.Aplicacao.Servicos
             servico.Excluir(iMapper.Map<TEntidade>(entidade));
         }
 
-        public void Incluir(TEntidadeDTO entidade)
+        /*public void Incluir(TEntidadeDTO entidade)
         {
             servico.Incluir(iMapper.Map<TEntidade>(entidade));
-        }
+        }*/
 
         public TEntidadeDTO SelecionarPorId(int id)
         {
