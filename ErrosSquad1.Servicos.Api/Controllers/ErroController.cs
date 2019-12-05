@@ -19,7 +19,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Retorna uma lista com os erros do ambiente X ordenados por nível
         /// </summary>
         /// <param in="query" name="ambiente" required="true"></param>
         /// <returns></returns>
@@ -41,7 +41,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
 
 
         /// <summary>
-        /// 
+        /// Retorna uma lista com os erros do ambiente X com título Y ordenados por nível
         /// </summary>
         /// <param in="query" name="ambiente" required="true"></param>
         /// <param in="query" name="titulo" required="true"></param>
@@ -60,8 +60,13 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             {
                 return BadRequest(ex.Message);
             }
-        }        
-        
+        }
+
+        /// <summary>
+        /// Retorna uma lista com os erros do ambiente X ordenados de forma decrescente por frequência
+        /// </summary>
+        /// <param name="ambiente"></param>
+        /// <returns></returns>
         [HttpGet]
         [ActionName("listar-por-frequencia")]
         [Route("{ambiente}")]
@@ -78,6 +83,12 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Retorna uma lista com os erros do ambiente X com título Y ordenados de forma decrescente por frequência
+        /// </summary>
+        /// <param name="ambiente"></param>
+        /// <param name="titulo"></param>
+        /// <returns></returns>
         [HttpGet]
         [ActionName("listar-por-frequencia")]
         [Route("{ambiente}/{titulo}")]
@@ -109,7 +120,12 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
+        
+        /// <summary>
+        /// Arquiva a lista de erros
+        /// </summary>
+        /// <param name="erros"></param>
+        /// <returns></returns>
         [HttpPut]
         [ActionName("arquivar")]
         public IActionResult Arquivar([FromBody] List<Erro> erros)
