@@ -127,7 +127,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         [HttpPost]
         [ActionName("incluir")]
         [Route("")]
-        public IActionResult Incluir([FromBody] Erro erro)
+        public IActionResult Incluir([FromBody] ErroDTO erro)
         {
             try
             {
@@ -150,7 +150,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         ///</returns>
         [HttpPut]
         [ActionName("arquivar")]
-        public IActionResult Arquivar([FromBody] List<Erro> erros)
+        public IActionResult Arquivar([FromBody] List<ErroDTO> erros)
         {
             try
             {

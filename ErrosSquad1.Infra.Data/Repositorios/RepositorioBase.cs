@@ -18,7 +18,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             this.contexto = contexto;
         }
 
-        public void Excluir(int id)
+        /*public void Excluir(int id)
         {
             var entidade = SelecionarPorId(id);
             if (entidade != null)
@@ -27,7 +27,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
                 contexto.Set<TEntidade>().Remove(entidade);
                 contexto.SendChanges();
             }
-        }
+        }*/
 
         public void Excluir(TEntidade entidade)
         {
@@ -35,13 +35,6 @@ namespace ErrosSquad1.Infra.Data.Repositorios
             contexto.Set<TEntidade>().Remove(entidade);
             contexto.SendChanges();
         }
-
-        /*public void Incluir(TEntidade entidade)
-        {
-            contexto.InitTransacao();
-            contexto.Set<TEntidade>().Add(entidade);
-            contexto.SendChanges();
-        }*/
 
         public TEntidade SelecionarPorId(int id)
         {

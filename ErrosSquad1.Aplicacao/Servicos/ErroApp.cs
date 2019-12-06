@@ -18,44 +18,45 @@ namespace ErrosSquad1.Aplicacao.Servicos
             this.servico = servico;
         }
 
-        public void Incluir(Erro erro)
+        public void Incluir(ErroDTO erro)
         {
             servico.Incluir(iMapper.Map<Erro>(erro));
         }
 
-        public void Arquivar(List<Erro> erros)
+        public List<ErroDTO> ListarErrosPorFrequencia()
         {
-            servico.Arquivar(erros);
+            return iMapper.Map<List<ErroDTO>>(servico.ListarErrosPorFrequencia());
+
         }
 
-        public List<Erro> ListarErrosPorFrequencia()
+        public List<ErroDTO> ListarErrosPorFrequencia(string ambiente)
         {
-            return servico.ListarErrosPorFrequencia();
+            return iMapper.Map<List<ErroDTO>>(servico.ListarErrosPorFrequencia(ambiente));
         }
 
-        public List<Erro> ListarErrosPorFrequencia(string ambiente)
+        public List<ErroDTO> ListarErrosPorFrequencia(string ambiente, string titulo)
         {
-            return servico.ListarErrosPorFrequencia(ambiente);
+            return iMapper.Map<List<ErroDTO>>(servico.ListarErrosPorFrequencia(ambiente, titulo));
         }
 
-        public List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo)
+        public List<ErroDTO> ListarErrosPorNivel()
         {
-            return servico.ListarErrosPorFrequencia(ambiente, titulo);
+            return iMapper.Map<List<ErroDTO>>(servico.ListarErrosPorNivel());
         }
 
-        public List<Erro> ListarErrosPorNivel()
+        public List<ErroDTO> ListarErrosPorNivel(string ambiente)
         {
-            return servico.ListarErrosPorNivel();
+            return iMapper.Map<List<ErroDTO>>(servico.ListarErrosPorNivel(ambiente));
         }
 
-        public List<Erro> ListarErrosPorNivel(string ambiente)
+        public List<ErroDTO> ListarErrosPorNivel(string ambiente, string titulo)
         {
-            return servico.ListarErrosPorNivel(ambiente);
+            return iMapper.Map<List<ErroDTO>>(servico.ListarErrosPorNivel(ambiente, titulo));
         }
 
-        public List<Erro> ListarErrosPorNivel(string ambiente, string titulo)
+        public void Arquivar(List<ErroDTO> erros)
         {
-            return servico.ListarErrosPorNivel(ambiente, titulo);
+            servico.Arquivar(iMapper.Map<List<Erro>>(erros));
         }
     }
 }

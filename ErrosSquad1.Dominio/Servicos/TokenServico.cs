@@ -3,6 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using ErrosSquad1.Dominio.Entidades;
+using ErrosSquad1.Dominio.Interfaces.Servicos;
 using Microsoft.IdentityModel.Tokens;
 
 namespace ErrosSquad1.Dominio.Servicos

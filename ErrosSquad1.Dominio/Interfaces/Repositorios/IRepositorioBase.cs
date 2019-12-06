@@ -8,9 +8,8 @@ namespace ErrosSquad1.Dominio.Interfaces.Repositorios
     public interface IRepositorioBase<TEntidade>
         where TEntidade : EntidadeBase
     {
-        //void Incluir(TEntidade entidade);
         
-        void Excluir(int id);
+        //void Excluir(int id);
 
         void Excluir(TEntidade entidade);
         

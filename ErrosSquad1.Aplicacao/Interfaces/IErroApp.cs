@@ -6,20 +6,20 @@ namespace ErrosSquad1.Aplicacao.Interfaces
 {
     public interface IErroApp : IAppBase<Erro, ErroDTO>
     {
-        List<Erro> ListarErrosPorNivel();
+        List<ErroDTO> ListarErrosPorNivel();
 
-        List<Erro> ListarErrosPorNivel(string ambiente);
+        List<ErroDTO> ListarErrosPorNivel(string ambiente);
 
-        List<Erro> ListarErrosPorNivel(string ambiente, string titulo);
+        List<ErroDTO> ListarErrosPorNivel(string ambiente, string titulo);
 
-        List<Erro> ListarErrosPorFrequencia();
+        List<ErroDTO> ListarErrosPorFrequencia();
 
-        List<Erro> ListarErrosPorFrequencia(string ambiente);
+        List<ErroDTO> ListarErrosPorFrequencia(string ambiente);
 
-        List<Erro> ListarErrosPorFrequencia(string ambiente, string titulo);
+        List<ErroDTO> ListarErrosPorFrequencia(string ambiente, string titulo);
 
-        void Incluir(Erro erro);
+        void Incluir(ErroDTO erro);
 
-        void Arquivar(List<Erro> erros);
+        void Arquivar(List<ErroDTO> erros);
     }
 }

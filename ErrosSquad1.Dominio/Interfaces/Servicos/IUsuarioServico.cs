@@ -4,7 +4,7 @@ namespace ErrosSquad1.Dominio.Interfaces.Servicos
 {
     public interface IUsuarioServico : IServicoBase<Usuario>
     {
-        Usuario GetUsuario(string email);
+        Usuario SelecionarPorEmail(string email);
 
         bool ConsistirUsuario(string email, string nome, string senha);
 
@@ -12,7 +12,7 @@ namespace ErrosSquad1.Dominio.Interfaces.Servicos
 
         void AlterarUsuario(Usuario usuario);
 
-        string Hash(string senha);
+        //string Hash(string senha);
 
         Usuario ValidarLoginUsuario(string email, string senha);
     }

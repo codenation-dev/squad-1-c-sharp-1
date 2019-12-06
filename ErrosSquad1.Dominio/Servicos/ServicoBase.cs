@@ -14,20 +14,15 @@ namespace ErrosSquad1.Dominio.Servicos
             this.repositorio = repositorio;
         }
 
-        public void Excluir(int id)
+        /*public void Excluir(int id)
         {
             repositorio.Excluir(id);
-        }
+        }*/
 
         public void Excluir(TEntidade entidade)
         {
             repositorio.Excluir(entidade);
         }
-
-        /*public void Incluir(TEntidade entidade)
-        {
-            repositorio.Incluir(entidade);
-        }*/
 
         public TEntidade SelecionarPorId(int id)
         {

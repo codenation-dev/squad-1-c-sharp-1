@@ -2,7 +2,6 @@
 using ErrosSquad1.Dominio.Interfaces.Repositorios;
 using ErrosSquad1.Infra.Data.Contextos;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 

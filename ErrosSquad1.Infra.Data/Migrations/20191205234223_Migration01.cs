@@ -60,7 +60,7 @@ namespace ErrosSquad1.Infra.Data.Migrations
                     id_nivel = table.Column<int>(nullable: false),
                     id_ambiente = table.Column<int>(nullable: false),
                     origem = table.Column<string>(maxLength: 16, nullable: false),
-                    data_hora = table.Column<DateTime>(nullable: false),
+                    data_hora = table.Column<DateTime>(type: "datetime", nullable: false),
                     titulo = table.Column<string>(maxLength: 100, nullable: false),
                     detalhe = table.Column<string>(maxLength: 2000, nullable: false),
                     status = table.Column<string>(maxLength: 1, nullable: false)

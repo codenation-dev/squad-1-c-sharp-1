@@ -58,13 +58,13 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         /// </returns>
         [HttpDelete]
         [ActionName("excluir")]
-        [Route("{id}")]
-        public IActionResult Excluir(int id)
+        [Route("")]
+        public IActionResult Excluir([FromBody] EntidadeDTO dado)
         {
             try
             {
-                app.Excluir(id);
-                return new OkObjectResult(true);
+                app.Excluir(dado);
+                return NoContent();
             }
             catch (Exception ex)
             {
