@@ -24,22 +24,14 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             this.app = app;
         }
 
-        [HttpGet]
-        [ActionName("listar-todos")]
-        [Route("")]
-        public IActionResult SelecionarTodos()
-        {
-            try
-            {
-                var item = app.SelecionarTodos();
-                return new OkObjectResult(item);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
+        /// <summary>
+        /// Busca por id
+        /// </summary>
+        /// <param name="id">Id do item que será retornado</param>
+        /// <returns>
+        /// 200 OK - E o Item
+        /// 400 Bad Request - Se Erro
+        /// </returns>
         [HttpGet]
         [ActionName("selecionar")]
         [Route("{id}")]
@@ -56,6 +48,14 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Exclui por id
+        /// </summary>
+        /// <param name="id">Id do item que será excluído</param>
+        /// <returns>
+        /// 200 OK - Se item excluído
+        /// 400 Bad Request - Se item não excluído
+        /// </returns>
         [HttpDelete]
         [ActionName("excluir")]
         [Route("")]

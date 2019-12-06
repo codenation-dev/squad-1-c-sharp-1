@@ -26,11 +26,15 @@ namespace ErrosSquad1.Servicos.Api.Controllers
 
 
         /// <summary>
-        /// O metodo valida os dados do login passados pelo usuário
+        /// Valida os dados do login passados pelo usuário
         /// </summary>
         /// <param in="query" name="email" required="true"></param>
         /// <param in="query" name="senha" required="true"></param>
-        /// <returns>Login e senha válidos - retorna status OK, inválidos - retorna BadRequest</returns>
+        /// <returns>
+        /// 200 OK - Usuário Logado
+        /// 404 Not Found - Login ou Senha inválidos
+        /// 400 Bad Request - Se houver algum erro
+        /// </returns>
         [HttpPost]
         [ActionName("validar-login-usuario")]
         [Route("login")]
@@ -62,7 +66,10 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         /// <summary>
         /// Grava os dados do usuario no banco de dados
         /// </summary>
-        /// <returns>Cadastrado com sucesso - retorna status OK, caso contrário - retorna BadRequest</returns>
+        /// <returns>
+        /// 200 OK - Usuário cadastrado com sucesso
+        /// 400 Bad Request - Se houver algum erro
+        /// </returns>
         [HttpPost]
         [Route("cadastro")]
         [ActionName("cadastrar-usuario")]
