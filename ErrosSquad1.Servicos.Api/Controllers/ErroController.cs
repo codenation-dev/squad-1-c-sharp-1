@@ -148,7 +148,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         /// 200 OK - Erros arquivados com sucesso
         /// 400 Bad Request - Se houver algum erro
         ///</returns>
-        [HttpPut]
+        [HttpPost]
         [ActionName("arquivar")]
         public IActionResult Arquivar([FromBody] List<ErroDTO> erros)
         {

@@ -4,56 +4,107 @@
         <name>ErrosSquad1.Servicos.Api</name>
     </assembly>
     <members>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.ControllerBase`2.SelecionarPorId(System.Int32)">
+            <summary>
+            Busca por id
+            </summary>
+            <param name="id">Id do item que será retornado</param>
+            <returns>
+            200 OK - E o Item
+            400 Bad Request - Se Erro
+            </returns>
+        </member>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.ControllerBase`2.Excluir(`1)">
+            <summary>
+            Exclui por id
+            </summary>
+            <param name="id">Id do item que será excluído</param>
+            <returns>
+            200 OK - Se item excluído
+            400 Bad Request - Se item não excluído
+            </returns>
+        </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorNivel(System.String)">
             <summary>
-            Retorna uma lista com os erros do ambiente X ordenados por nível
+            Erros do ambiente X ordenados por nível
             </summary>
-            <param in="query" name="ambiente" required="true"></param>
-            <returns></returns>
+            <param in="query" name="ambiente" required="true">Nome do Ambiente</param>
+            <returns>
+            200 OK - Lista de erros do ambiente filtrado ordenados por nível
+            400 Bad Request - se houver algum erro
+            </returns>
         </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorNivel(System.String,System.String)">
             <summary>
-            Retorna uma lista com os erros do ambiente X com título Y ordenados por nível
+            Erros do ambiente X com título Y ordenados por nível
             </summary>
-            <param in="query" name="ambiente" required="true"></param>
-            <param in="query" name="titulo" required="true"></param>
-            <returns></returns>
+            <param in="query" name="ambiente" required="true">Nome do Ambiente</param>
+            <param in="query" name="titulo" required="true">Título do Erro</param>
+            <returns>
+            200 OK - Lista de erros do ambiente e título filtrados, ordenados por nível
+            400 Bad Request - se houver algum erro
+            </returns>
         </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorFrequencia(System.String)">
             <summary>
-            Retorna uma lista com os erros do ambiente X ordenados de forma decrescente por frequência
+            Erros do ambiente X ordenados de forma decrescente por frequência
             </summary>
-            <param name="ambiente"></param>
+            <param name="ambiente">Nome do Ambiente</param>
+            200 OK - Lista de erros do ambiente filtrado, ordenados de forma decrescente por frequência
+            400 Bad Request - se houver algum erro
             <returns></returns>
         </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.ListarErrosPorFrequencia(System.String,System.String)">
+             <summary>
+             Erros do ambiente X com título Y ordenados de forma decrescente por frequência
+             </summary>
+             <param name="ambiente">Nome do Ambiente</param>
+             <param name="titulo">Título do Erro</param>
+             <returns>
+             200 OK - Lista de erros do ambiente e título filtrados, ordenados de forma decrescente por frequência
+             400 Bad Request - se houver algum erro
+            </returns>
+        </member>
+        <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.Incluir(ErrosSquad1.Aplicacao.DTO.ErroDTO)">
             <summary>
-            Retorna uma lista com os erros do ambiente X com título Y ordenados de forma decrescente por frequência
+            Inclui erro
             </summary>
-            <param name="ambiente"></param>
-            <param name="titulo"></param>
-            <returns></returns>
+            <param name="erro"></param>
+            <returns>
+            200 OK - Incluído com sucesso
+            400 Bad Request - Se houver algum erro
+            </returns>
         </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.ErroController.Arquivar(System.Collections.Generic.List{ErrosSquad1.Aplicacao.DTO.ErroDTO})">
-            <summary>
-            Arquiva a lista de erros
-            </summary>
-            <param name="erros"></param>
-            <returns></returns>
+             <summary>
+             Arquiva uma lista de erros
+             </summary>
+             <param name="erros"></param>
+             <returns>
+             200 OK - Erros arquivados com sucesso
+             400 Bad Request - Se houver algum erro
+            </returns>
         </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.UsuarioController.ValidarLoginUsuario(System.String,System.String)">
             <summary>
-            O metodo valida os dados do login passados pelo usuário
+            Valida os dados do login passados pelo usuário
             </summary>
             <param in="query" name="email" required="true"></param>
             <param in="query" name="senha" required="true"></param>
-            <returns>Login e senha válidos - retorna status OK, inválidos - retorna BadRequest</returns>
+            <returns>
+            200 OK - Usuário Logado
+            404 Not Found - Login ou Senha inválidos
+            400 Bad Request - Se houver algum erro
+            </returns>
         </member>
         <member name="M:ErrosSquad1.Servicos.Api.Controllers.UsuarioController.CadastrarUsuario(ErrosSquad1.Aplicacao.DTO.UsuarioDTO)">
             <summary>
             Grava os dados do usuario no banco de dados
             </summary>
-            <returns>Cadastrado com sucesso - retorna status OK, caso contrário - retorna BadRequest</returns>
+            <returns>
+            200 OK - Usuário cadastrado com sucesso
+            400 Bad Request - Se houver algum erro
+            </returns>
         </member>
     </members>
 </doc>

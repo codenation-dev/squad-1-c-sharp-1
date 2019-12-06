@@ -14,36 +14,10 @@ namespace ErrosSquad1.Dominio.Entidades
 
         public string Email { get; set; }
 
-        private string senha;
-
-        public string Senha
-        {
-
-            get
-            {
-
-                return Hash(senha);
-
-            }
-
-            set
-            {
-
-                senha = value;
-            }
-        }
+        public string Senha { get; set; }
 
         public virtual ICollection<Erro> Erros { get; set; }
 
-        public static string Hash(string senha)
-        {
-
-            using (SHA1Managed sha1 = new SHA1Managed())
-            {
-                var hash = sha1.ComputeHash(Encoding.UTF8.GetBytes(senha));
-                return string.Concat(hash.Select(b => b.ToString("x2")));
-            }
-        }
 
     }
 }

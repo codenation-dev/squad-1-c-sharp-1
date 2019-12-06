@@ -27,11 +27,6 @@ namespace ErrosSquad1.Dominio.Servicos
 
         }
 
-        /*public string Hash(string senha)
-        {
-            return users.Hash(senha);
-        }*/
-
         public bool ConsistirUsuario(string email, string nome, string senha)
         {
             return users.ConsistirUsuario(email, nome, senha);     

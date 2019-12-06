@@ -34,7 +34,7 @@ namespace ErrosSquad1.Infra.Data.Repositorios
                 erro.Status = cErroArquivado;
 
                 contexto.Set<Erro>().Attach(erro);
-                contexto.Entry(erro).State = EntityState.Modified;
+                //contexto.Entry(erro).State = EntityState.Modified;
             }
             contexto.SendChanges();
         }
