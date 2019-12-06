@@ -54,8 +54,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
                     return new
                     {
                         user = usuario,
-                    };
-                    //return Ok(usuario);  
+                    }; 
                 }
             }
             catch(Exception e){
@@ -77,7 +76,7 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         {
             try{
                 app.CadastrarUsuario(usuario);
-                return Ok(true);
+                return Ok("Usuário cadastrado com sucesso!");
             }catch(Exception e){
                 return BadRequest(e.Message);
             }
