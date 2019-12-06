@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace ErrosSquad1.Servicos.Api.Controllers
 {
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ErroController : ControllerBase<Erro, ErroDTO>
     {
         private readonly IErroApp app;
@@ -19,10 +19,13 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         /// <summary>
-        /// Retorna uma lista com os erros do ambiente X ordenados por nível
+        /// Erros do ambiente X ordenados por nível
         /// </summary>
-        /// <param in="query" name="ambiente" required="true"></param>
-        /// <returns></returns>
+        /// <param in="query" name="ambiente" required="true">Nome do Ambiente</param>
+        /// <returns>
+        /// 200 OK - Lista de erros do ambiente filtrado ordenados por nível
+        /// 400 Bad Request - se houver algum erro
+        /// </returns>
         [HttpGet]
         [ActionName("listar-por-nivel")]
         [Route("{ambiente}")]
@@ -41,11 +44,14 @@ namespace ErrosSquad1.Servicos.Api.Controllers
 
 
         /// <summary>
-        /// Retorna uma lista com os erros do ambiente X com título Y ordenados por nível
+        /// Erros do ambiente X com título Y ordenados por nível
         /// </summary>
-        /// <param in="query" name="ambiente" required="true"></param>
-        /// <param in="query" name="titulo" required="true"></param>
-        /// <returns></returns>
+        /// <param in="query" name="ambiente" required="true">Nome do Ambiente</param>
+        /// <param in="query" name="titulo" required="true">Título do Erro</param>
+        /// <returns>
+        /// 200 OK - Lista de erros do ambiente e título filtrados, ordenados por nível
+        /// 400 Bad Request - se houver algum erro
+        /// </returns>
         [HttpGet]
         [ActionName("listar-por-nivel")]
         [Route("{ambiente}/{titulo}")]
@@ -63,9 +69,11 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         /// <summary>
-        /// Retorna uma lista com os erros do ambiente X ordenados de forma decrescente por frequência
+        /// Erros do ambiente X ordenados de forma decrescente por frequência
         /// </summary>
-        /// <param name="ambiente"></param>
+        /// <param name="ambiente">Nome do Ambiente</param>
+        /// 200 OK - Lista de erros do ambiente filtrado, ordenados de forma decrescente por frequência
+        /// 400 Bad Request - se houver algum erro
         /// <returns></returns>
         [HttpGet]
         [ActionName("listar-por-frequencia")]
@@ -84,11 +92,14 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
 
         /// <summary>
-        /// Retorna uma lista com os erros do ambiente X com título Y ordenados de forma decrescente por frequência
+        /// Erros do ambiente X com título Y ordenados de forma decrescente por frequência
         /// </summary>
-        /// <param name="ambiente"></param>
-        /// <param name="titulo"></param>
-        /// <returns></returns>
+        /// <param name="ambiente">Nome do Ambiente</param>
+        /// <param name="titulo">Título do Erro</param>
+        /// <returns>
+        /// 200 OK - Lista de erros do ambiente e título filtrados, ordenados de forma decrescente por frequência
+        /// 400 Bad Request - se houver algum erro
+        ///</returns>
         [HttpGet]
         [ActionName("listar-por-frequencia")]
         [Route("{ambiente}/{titulo}")]
@@ -105,6 +116,14 @@ namespace ErrosSquad1.Servicos.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Inclui erro
+        /// </summary>
+        /// <param name="erro"></param>
+        /// <returns>
+        /// 200 OK - Incluído com sucesso
+        /// 400 Bad Request - Se houver algum erro
+        /// </returns>
         [HttpPost]
         [ActionName("incluir")]
         [Route("")]
@@ -122,10 +141,13 @@ namespace ErrosSquad1.Servicos.Api.Controllers
         }
         
         /// <summary>
-        /// Arquiva a lista de erros
+        /// Arquiva uma lista de erros
         /// </summary>
         /// <param name="erros"></param>
-        /// <returns></returns>
+        /// <returns>
+        /// 200 OK - Erros arquivados com sucesso
+        /// 400 Bad Request - Se houver algum erro
+        ///</returns>
         [HttpPut]
         [ActionName("arquivar")]
         public IActionResult Arquivar([FromBody] List<Erro> erros)
